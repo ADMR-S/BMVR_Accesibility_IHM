@@ -1,190 +1,416 @@
-/* ===========================
-   Charte BMVR : Jaune & Magenta
-   =========================== */
+/* ===============================
+   BMVR Nice – Style accessible et très lisible
+   =============================== */
 
 :root {
-  --bg: #ffffff;
-  --text: #111111;
-  --muted: #444444;
+  /* Couleurs */
+  --bg: #fffdf8;              /* blanc chaud pour limiter l’éblouissement */
+  --text: #0a0a0a;            /* noir quasi pur : contraste maximal */
+  --text-secondary: #2a2a2a;
+  --surface: #f2f2f2;
+  --border: #bdbdbd;
 
-  /* Couleurs charte */
-  --jaune: #FFD500;      /* jaune vif */
-  --magenta: #C71585;    /* magenta foncé */
-  --hover-magenta: #a0136c;
-  --hover-jaune: #e6c200;
+  /* Couleurs de marque */
+  --magenta: #8a004f;         /* magenta foncé, contraste 9:1 sur fond clair */
+  --magenta-hover: #600036;
+  --jaune: #ffcc00;           /* jaune lumineux mais lisible sur fond sombre */
+  --jaune-hover: #e6b800;
 
-  /* Surfaces / bordures */
-  --surface: #f9f9f9;
-  --border: #ddd;
-
-  --focus: #FFD500; /* focus jaune */
-
+  /* Autres */
+  --focus: #ffcc00;
+  --radius: 0.5rem;
   --maxw: 70rem;
-  --radius: .5rem;
-  --gap: 1rem;
 
-  --font-size: 112.5%; /* ~18px */
-  --line-height: 1.6;
+  /* Typo */
+  --font-size: 125%;          /* ≈20px */
+  --line-height: 1.8;
 }
 
-/* Mode sombre */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0e0f12;
-    --text: #f2f4f8;
-    --muted: #c7c9cf;
-    --surface: #171a20;
-    --border: #303540;
-  }
+/* ===============================
+   Base
+   =============================== */
+html {
+  font-size: var(--font-size);
+  scroll-behavior: smooth;
 }
 
-/* Base */
-html { font-size: var(--font-size); }
 body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: system-ui, sans-serif;
+  font-family: "Segoe UI", Roboto, system-ui, sans-serif;
   line-height: var(--line-height);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Conteneur */
-header, main, footer, nav, aside {
+/* Zones principales */
+header,
+main,
+footer {
   width: min(100% - 2rem, var(--maxw));
   margin-inline: auto;
 }
 
-/* Titres */
-h1, h2, h3 { line-height: 1.25; }
-h1 { font-size: 2rem; margin: 1rem 0; color: var(--magenta); }
-h2 { font-size: 1.5rem; margin: 1.25rem 0 .5rem; color: var(--jaune); }
-h3 { font-size: 1.2rem; margin: 1rem 0 .25rem; }
+/* ===============================
+   Titres
+   =============================== */
+h1, h2, h3 {
+  line-height: 1.3;
+  font-weight: 700;
+  margin-block: 1rem 0.5rem;
+}
 
-/* Liens */
-a { color: var(--magenta); }
-a:hover { color: var(--hover-magenta); }
+h1 {
+  font-size: 2.2rem;
+  color: var(--magenta);
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: var(--jaune);
+}
+
+h3 {
+  font-size: 1.4rem;
+  color: var(--text-secondary);
+}
+
+/* ===============================
+   Paragraphes
+   =============================== */
+p {
+  max-width: 70ch;
+  margin-block: 0.9rem;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+/* ===============================
+   Liens
+   =============================== */
+a {
+  color: var(--magenta);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 600;
+}
+
+a:hover {
+  color: var(--magenta-hover);
+}
+
 a:focus-visible {
   outline: 3px solid var(--focus);
-  outline-offset: 2px;
+  outline-offset: 4px;
   border-radius: 4px;
 }
 
-/* Skip links */
+/* ===============================
+   Liens d’évitement
+   =============================== */
 .skip-links a {
   position: absolute;
   top: -100%;
   left: 0;
   background: var(--jaune);
   color: #000;
-  padding: .5rem 1rem;
-  z-index: 100;
+  padding: 0.7rem 1rem;
+  font-weight: bold;
+  z-index: 1000;
   text-decoration: none;
 }
 .skip-links a:focus-visible {
   top: 0;
 }
 
-/* Header */
+/* ===============================
+   Header et navigation
+   =============================== */
 header {
-  border-bottom: 4px solid var(--jaune);
-  padding: 1rem 0;
+  border-bottom: 5px solid var(--jaune);
+  padding: 1.2rem 0;
 }
-.brand img { max-width: 200px; }
 
-/* Navigation principale */
+.brand {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+
+  /* Image de bannière */
+  background-image: url("bmvr.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-top: 4px solid var(--magenta);
+  border-bottom: 4px solid var(--magenta);
+  margin-bottom: 1.5rem;
+}
+.brand img {
+  width: 50%;  
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 #menu-principal ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: .75rem;
+  gap: 1rem;
   margin: 1rem 0 0;
   padding: 0;
 }
+
 #menu-principal a {
   text-decoration: none;
-  padding: .5rem .75rem;
-  border-radius: .25rem;
-  font-weight: bold;
+  padding: 0.7rem 1rem;
+  border-radius: 0.3rem;
+  font-weight: 700;
   color: var(--text);
   border: 2px solid transparent;
+  font-size: 1rem;
 }
+
 #menu-principal a:hover {
   background: var(--surface);
   border-color: var(--magenta);
 }
+
 #menu-principal a[aria-current="page"] {
   background: var(--magenta);
   color: #fff;
 }
 
-/* Boutons */
-button, input[type="submit"], .btn {
-  padding: .6rem 1rem;
-  border-radius: .25rem;
+/* ===============================
+   Boutons
+   =============================== */
+button,
+input[type="submit"],
+.btn {
+  padding: 0.7rem 1.1rem;
+  border-radius: 0.3rem;
   border: none;
-  font-weight: bold;
+  font-weight: 700;
   cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s ease;
 }
-button, .btn-primary {
+
+button,
+.btn-primary {
   background: var(--magenta);
   color: #fff;
 }
-button:hover, .btn-primary:hover {
-  background: var(--hover-magenta);
+
+button:hover,
+.btn-primary:hover {
+  background: var(--magenta-hover);
 }
+
 .btn-secondary {
   background: var(--jaune);
   color: #000;
 }
+
 .btn-secondary:hover {
-  background: var(--hover-jaune);
+  background: var(--jaune-hover);
 }
 
-/* Sections */
+/* ===============================
+   Sections et articles
+   =============================== */
 main section {
-  padding: 1.5rem 1rem;
-  margin-block: 1rem;
   background: var(--surface);
   border-radius: var(--radius);
+  padding: 1.8rem 1.2rem;
+  margin-block: 1.5rem;
 }
 
-/* Articles (actu / événements) */
 article {
-  border-left: 4px solid var(--magenta);
-  padding: 1rem;
-  margin-block: .75rem;
+  border-left: 5px solid var(--magenta);
   background: #fff;
+  padding: 1.5rem;
   border-radius: var(--radius);
+  margin-block: 1rem;
 }
-article h3 { color: var(--magenta); }
 
-/* Tableau horaires */
+/* Grille de services */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.service-card {
+  background: #fff;
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin: 0;
+  border-left: 5px solid var(--magenta);
+  transition: all 0.2s ease;
+}
+
+.service-card:hover {
+  border-color: var(--magenta);
+  box-shadow: 0 4px 12px rgba(138, 0, 79, 0.1);
+  transform: translateY(-2px);
+}
+
+.service-card:focus-within {
+  border-color: var(--magenta);
+  box-shadow: 0 0 0 3px var(--focus);
+}
+
+.service-card h3 {
+  color: var(--magenta);
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.service-card p {
+  color: var(--text-secondary);
+  margin-bottom: 1.2rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.service-card a {
+  font-weight: 700;
+  color: var(--magenta);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.service-card a:hover {
+  border-bottom-color: var(--magenta);
+}
+
+.service-card a:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+/* ===============================
+   Tableaux
+   =============================== */
 table {
   border-collapse: collapse;
   width: 100%;
   margin-top: 1rem;
+  font-size: 1rem;
 }
+
 th, td {
   border: 1px solid var(--border);
-  padding: .5rem;
+  padding: 0.8rem;
   text-align: left;
 }
-th { background: var(--jaune); color: #000; }
 
-/* Footer */
-footer {
-  border-top: 4px solid var(--magenta);
-  padding: 1rem 0;
-  margin-top: 2rem;
-  font-size: .9rem;
-  color: var(--muted);
+th {
+  background: var(--jaune);
+  color: #000;
+  font-weight: 700;
 }
+
+tr:nth-child(even) {
+  background-color: #f6f6f6;
+}
+
+/* ===============================
+   Pied de page
+   =============================== */
+footer {
+  border-top: 5px solid var(--magenta);
+  padding: 1.8rem 0;
+  margin-top: 2rem;
+  background: var(--surface);
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
 footer nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin: .5rem 0 0;
+  margin: 0.5rem 0 0;
   padding: 0;
 }
-footer a { color: var(--magenta); }
+
+footer a {
+  color: var(--magenta);
+  text-decoration: underline;
+}
+
+/* ===============================
+   Images et médias
+   =============================== */
+img, video {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+}
+
+/* ===============================
+   Accessibilité : texte invisible
+   =============================== */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+
+.contact-form .form-group {
+  display: block;
+  margin-bottom: 1.2em;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.3em;
+  font-weight: 600;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+.contact-form .checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.contact-form .checkbox input[type="checkbox"] {
+  margin-right: 0.5em;
+}
+
+.contact-form .full-width {
+  width: 100%;
+  resize: vertical;
+}

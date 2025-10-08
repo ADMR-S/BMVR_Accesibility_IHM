@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — BMVR Nice</title>
+  <meta name="description" content="Page de contact officielle de la BMVR de Nice — accessible à tous, avec informations, horaires et formulaire de contact." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header role="banner">
+    <div class="brand">
+      
+  </div>
+    <section tabindex="0" class="container header-content">
+      <h1 >BMVR de Nice</h1>
+      <nav role="navigation" aria-label="Navigation principale">
+        <ul>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#horaires">Horaires</a></li>
+          <li><a href="#plan">Plan</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+  <main id="main" class="container main-grid" role="main">
+  <!-- Section contact -->
+  <section id="contact" aria-labelledby="titre-contact" tabindex="0" role="region">
+    <h2 id="titre-contact">Nous contacter</h2>
+    <p>Une question sur les prêts, vos réservations ou les activités ? Envoyez-nous un message.</p>
+
+    <form action="#" method="post" aria-describedby="form-info" class="contact-form">
+      <p id="form-info" class="sr-only">Tous les champs marqués d’un astérisque (*) sont obligatoires.</p>
+
+      <div class="form-group">
+        <label for="name">Nom et prénom *</label>
+        <input id="name" name="name" type="text" required placeholder="Ex. Marie Dupont" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Adresse e-mail *</label>
+        <input id="email" name="email" type="email" required placeholder="exemple@domaine.fr" />
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Objet</label>
+        <input id="subject" name="subject" type="text" placeholder="Prêt, Réservation, etc." />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" rows="6" required placeholder="Votre message..." class="full-width"></textarea>
+      </div>
+
+      <div class="form-group checkbox">
+        <input id="gdpr" name="gdpr" type="checkbox" required />
+        <label for="gdpr">J’accepte la politique de confidentialité.</label>
+      </div>
+
+      <div class="form-group">
+        <button type="submit">Envoyer le message</button>
+      </div>
+    </form>
+
+    <!-- Informations de contact -->
+    <section class="infos" aria-labelledby="infos-contact" tabindex="0" role="region">
+      <h3 id="infos-contact">Informations de contact</h3>
+      <ul>
+        <li>
+          <strong>Téléphone :</strong>
+          <a href="tel:+334XXXXXXXX" aria-label="Téléphone BMVR Nice">+33 (0)4 XX XX XX XX</a>
+        </li>
+        <li>
+          <strong>Adresse :</strong>
+          BMVR Nice, Promenade des Arts, 06300 Nice
+        </li>
+        <li>
+          <strong>Email :</strong>
+          <a href="mailto:contact@bmvr-nice.fr">contact@bmvr-nice.fr</a>
+        </li>
+      </ul>
+    </section>
+  </section>
+
+  <!-- Informations pratiques -->
+  <aside aria-labelledby="infos-pratiques" tabindex="0" role="region">
+    <h3 id="infos-pratiques">Informations pratiques</h3>
+    <section aria-labelledby="horaires" role="region">
+      <h4 id="horaires">Horaires</h4>
+      <p>
+        Lundi — Vendredi : 10h — 19h<br>
+        Samedi : 10h — 17h<br>
+        Dimanche : Fermé
+      </p>
+    </section>
+  </aside>
+</main>
+
+
+  <footer role="contentinfo">
+    <p>© BMVR Nice — Tous droits réservés</p>
+    <nav aria-label="Liens légaux">
+      <ul>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="#">Politique de confidentialité</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>

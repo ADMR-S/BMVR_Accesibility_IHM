@@ -1,50 +1,69 @@
-<!doct  <meta name="description" content="Bienvenue sur la BMVR de Nice : catalogue, horaires, services, événements, informations d'accessibilité.">
-  <!-- CSS à venir : gérer focus visible (outline), contrastes, .sr-only, responsive -->
-  <link rel="stylesheet" href="style.css">
-</head> html>
+<!doctype html>
 <html lang="fr">
 <head>
   <meta charset="utf-8">
   <title>BMVR Nice — Accueil</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">$
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Bienvenue sur la BMVR de Nice : catalogue, horaires, services, événements, informations d’accessibilité.">
-  <!-- CSS à venir : gérer focus visible (outline), contrastes, .sr-only, responsive -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Accessibilité minimale intégrée (peut être déplacée dans style.css) */
+    :focus-visible {
+      outline: 3px solid #0a7;
+      outline-offset: 2px;
+    }
+    .skip-links a {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+    }
+    .skip-links a:focus,
+    .skip-links a:focus-visible {
+      left: 0;
+      background: #fff;
+      padding: .5rem 1rem;
+      z-index: 1000;
+      box-shadow: 0 0 0 3px #0a7;
+    }
+    .sr-only {
+      position: absolute !important;
+      width: 1px; height: 1px;
+      padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0);
+      white-space: nowrap; border: 0;
+    }
+    .table-wrapper {
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      max-width: 100%;
+    }
+  </style>
 </head>
 <body>
   <!-- Liens d’évitement -->
   <nav aria-label="Accès rapide" class="skip-links">
     <a href="#contenu">Aller au contenu</a>
     <a href="#recherche-site">Aller à la recherche</a>
+    <a href="#tab-horaires">Aller aux horaires</a><!-- nouveau -->
     <a href="#menu-principal">Aller au menu</a>
   </nav>
 
   <header role="banner">
     <div class="brand">
       <a href="/" rel="home">
-        <img src="assets/logo-bmvr.svg" alt="BMVR Nice — Bibliothèque municipale à vocation régionale">
+        <!--<img src="bmvr.jpg" alt="BMVR Nice — Bibliothèque municipale à vocation régionale">-->
       </a>
-      <p class="site-tagline">Lire, découvrir, participer</p>
     </div>
 
     <!-- Outils -->
     <nav aria-label="Outils du site">
       <ul>
         <li>
-          <form action="/recherche" method="get" role="search" aria-labelledby="recherche-site-label">
+          <form action="./not-implemented.html" method="get" role="search" aria-labelledby="recherche-site-label">
             <h2 id="recherche-site-label" class="sr-only">Recherche sur le site</h2>
             <label for="q" id="recherche-site">Rechercher</label>
-            <input type="search" id="q" name="q" autocomplete="on" placeholder="Titre, auteur, sujet…" />
+            <input type="search" id="q" name="q" autocomplete="on" placeholder="Titre, auteur, sujet…">
             <button type="submit">Rechercher</button>
-          </form>
-        </li>
-        <li>
-          <form action="/langue" method="post" aria-labelledby="label-langue">
-            <label id="label-langue" for="lang">Langue</label>
-            <select id="lang" name="lang">
-              <option value="fr" selected>Français</option>
-              <option value="en">English</option>
-            </select>
-            <button type="submit">Valider</button>
           </form>
         </li>
       </ul>
@@ -53,23 +72,15 @@
     <!-- Navigation principale -->
     <nav id="menu-principal" aria-label="Navigation principale">
       <ul>
-        <li><a href="/" aria-current="page">Accueil</a></li>
-        <li><a href="/catalogue">Catalogue</a></li>
-        <li><a href="/services">Services</a></li>
-        <li><a href="/evenements">Événements</a></li>
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="/accessibilite">Accessibilité</a></li>
+        <li><a href="./index.html" aria-current="page">Accueil</a></li>
+        <li><a href="./not-implemented.html">Catalogue</a></li>
+        <li><a href="./not-implemented.html">Services</a></li>
+        <li><a href="./not-implemented.html">Événements</a></li>
+        <li><a href="./not-implemented.html">Blog</a></li>
+        <li><a href="./contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
-
-  <!-- Fil d’Ariane (facultatif sur la home) -->
-  <nav aria-label="Fil d’Ariane" class="breadcrumb">
-    <ol>
-      <li><a href="/">Accueil</a></li>
-    </ol>
-  </nav>
 
   <main id="contenu">
     <!-- Héros -->
@@ -77,41 +88,29 @@
       <h1 id="titre-hero">BMVR Nice — Bibliothèque municipale à vocation régionale</h1>
       <p>Accédez au catalogue, découvrez nos services et participez aux animations culturelles de la ville.</p>
       <p>
-        <a href="/catalogue">Découvrir le catalogue</a>
-        <a href="/inscription">S’inscrire à la bibliothèque</a>
+        <a href="./not-implemented.html">Découvrir le catalogue</a>
+        <a href="./not-implemented.html">S’inscrire à la bibliothèque</a>
       </p>
       <!-- Image décorative en CSS si possible. Si image portée d’info, utiliser <figure> avec alt et figcaption. -->
     </section>
-
-    <!-- Accès rapides -->
-    <nav aria-label="Accès rapides">
-      <ul>
-        <li><a href="/horaires-acces">Horaires &amp; accès</a></li>
-        <li><a href="/services-numeriques">Services numériques</a></li>
-        <li><a href="/ressources-en-ligne">Ressources en ligne</a></li>
-        <li><a href="/aide">Aide &amp; accompagnement</a></li>
-        <li><a href="/accessibilite">Accessibilité du site</a></li>
-        <li><a href="/plan-du-site">Plan du site</a></li>
-      </ul>
-    </nav>
 
     <!-- Actualités -->
     <section aria-labelledby="titre-actus">
       <h2 id="titre-actus">Actualités</h2>
 
       <article>
-        <h3>Nouvelle exposition : “Nice, ville de lecture”</h3>
+        <h3>Le site de la BMVF devient accéssible</h3>
         <p><time datetime="2025-10-10">10 octobre 2025</time> — Une exposition sur la lecture inclusive à la médiathèque.</p>
-        <p><a href="/actualites/exposition-lecture-inclusive">Lire l’article : Nice, ville de lecture</a></p>
+        <p><a href="./article.html">Lire l’article : Nice, ville de lecture</a></p>
       </article>
 
       <article>
         <h3>Extension des horaires le samedi</h3>
         <p><time datetime="2025-10-05">5 octobre 2025</time> — La BMVR étend ses horaires pour mieux vous accueillir.</p>
-        <p><a href="/actualites/extension-horaires-samedi">Lire l’article : Extension des horaires le samedi</a></p>
+        <p><a href="./not-implemented.html">Lire l’article : Extension des horaires le samedi</a></p>
       </article>
 
-      <p><a href="/actualites">Voir toutes les actualités</a></p>
+      <p><a href="./not-implemented.html">Voir toutes les actualités</a></p>
     </section>
 
     <!-- Événements -->
@@ -121,111 +120,108 @@
       <article>
         <h3>Atelier lecture facile (FALC)</h3>
         <p><time datetime="2025-10-15T14:00">15 octobre 2025 — 14:00</time>, Salle Ateliers — Atelier d’initiation au FALC.</p>
-        <p><a href="/evenements/atelier-falc-15-10">Détails de l’événement : Atelier lecture facile</a></p>
+        <p><a href="./not-implemented.html">Détails de l’événement : Atelier lecture facile</a></p>
       </article>
 
       <article>
         <h3>Club de lecture en LSF</h3>
         <p><time datetime="2025-10-20T18:30">20 octobre 2025 — 18:30</time>, Salle Médiation — Club de lecture avec interprétation LSF.</p>
-        <p><a href="/evenements/club-lecture-lsf-20-10">Détails de l’événement : Club de lecture en LSF</a></p>
+        <p><a href="./not-implemented.html">Détails de l’événement : Club de lecture en LSF</a></p>
       </article>
 
-      <p><a href="/evenements">Tous les événements</a></p>
+      <p><a href="./not-implemented.html">Tous les événements</a></p>
     </section>
 
     <!-- Horaires & accès -->
-    <section aria-labelledby="titre-horaires">
-      <h2 id="titre-horaires">Horaires &amp; accès</h2>
+      <h2 id="titre-horaires">Horaires et accès</h2>
 
-      <table>
-        <caption>Horaires d’ouverture de la BMVR de Nice</caption>
-        <thead>
-          <tr>
-            <th scope="col">Jour</th>
-            <th scope="col">Horaires</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Mardi</th>
-            <td>10:00 – 18:00</td>
-          </tr>
-          <tr>
-            <th scope="row">Mercredi</th>
-            <td>10:00 – 18:00</td>
-          </tr>
-          <tr>
-            <th scope="row">Jeudi</th>
-            <td>12:00 – 19:00</td>
-          </tr>
-          <tr>
-            <th scope="row">Vendredi</th>
-            <td>12:00 – 19:00</td>
-          </tr>
-          <tr>
-            <th scope="row">Samedi</th>
-            <td>10:00 – 18:00</td>
-          </tr>
-          <tr>
-            <th scope="row">Dimanche &amp; Lundi</th>
-            <td>Fermé</td>
-          </tr>
-        </tbody>
-      </table>
+      <!-- Conteneur défilable au clavier -->
+        <table id="tab-horaires"  tabindex="0">
+          <caption id="cap-horaires">Horaires d’ouverture de la BMVR de Nice</caption>
+          <thead>
+            <tr>
+              <th scope="col" id="col-jour">Jour</th>
+              <th scope="col" id="col-horaires">Horaires</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" id="row-mardi">Mardi</th>
+              <td headers="row-mardi col-horaires">10:00 – 18:00</td>
+            </tr>
+            <tr>
+              <th scope="row" id="row-mercredi">Mercredi</th>
+              <td headers="row-mercredi col-horaires">10:00 – 18:00</td>
+            </tr>
+            <tr>
+              <th scope="row" id="row-jeudi">Jeudi</th>
+              <td headers="row-jeudi col-horaires">12:00 – 19:00</td>
+            </tr>
+            <tr>
+              <th scope="row" id="row-vendredi">Vendredi</th>
+              <td headers="row-vendredi col-horaires">12:00 – 19:00</td>
+            </tr>
+            <tr>
+              <th scope="row" id="row-samedi">Samedi</th>
+              <td headers="row-samedi col-horaires">10:00 – 18:00</td>
+            </tr>
+            <tr>
+              <th scope="row" id="row-dimanche-lundi">Dimanche et Lundi</th>
+              <td headers="row-dimanche-lundi col-horaires">Fermé</td>
+            </tr>
+          </tbody>
+        </table>
 
-      <section aria-labelledby="titre-acces">
         <h3 id="titre-acces">Accès</h3>
         <p>Adresse : 2 Place Yves Klein, 06300 Nice.</p>
         <p>Transports : Tram L1 — Arrêt “Garibaldi”, accès PMR disponible.</p>
-        <!-- Si carte embarquée (iframe), toujours fournir un titre de cadre pertinent via title="" -->
-        <!-- <iframe title="Carte d’accès à la BMVR Nice" src="..."></iframe> -->
-      </section>
-    </section>
+
 
     <!-- Services -->
     <section aria-labelledby="titre-services">
-      <h2 id="titre-services">Services</h2>
-      <ul>
-        <li><a href="/services/pret">Prêt &amp; retour</a></li>
-        <li><a href="/services/numeriques">Services numériques</a></li>
-        <li><a href="/services/espaces">Espaces &amp; salles</a></li>
-        <li><a href="/services/ressources-en-ligne">Ressources en ligne</a></li>
-        <li><a href="/services/accompagnement-numerique">Accompagnement numérique</a></li>
-      </ul>
+      <h2 id="titre-services">Nos services</h2>
+      <p>Découvrez tous les services que la BMVR met à votre disposition pour vous accompagner dans vos recherches et vos projets.</p>
+      
+      <div class="services-grid">
+        <article class="service-card">
+          <h3>Prêt et retour</h3>
+          <p>Empruntez livres, DVD, CD et documents numériques. Retours possibles dans toutes nos antennes.</p>
+          <a href="./not-implemented.html" aria-describedby="desc-pret">En savoir plus sur le prêt</a>
+          <span id="desc-pret" class="sr-only">Modalités d'emprunt et de retour des documents</span>
+        </article>
+
+        <article class="service-card">
+          <h3>Services numériques</h3>
+          <p>Accès WiFi gratuit, postes informatiques, impression et numérisation de documents.</p>
+          <a href="./not-implemented.html" aria-describedby="desc-numerique">Découvrir nos équipements</a>
+          <span id="desc-numerique" class="sr-only">Équipements informatiques et services numériques disponibles</span>
+        </article>
+
+        <article class="service-card">
+          <h3>Espaces et salles</h3>
+          <p>Salles de travail en groupe, espaces silencieux, salle de conférence réservable.</p>
+          <a href="./not-implemented.html" aria-describedby="desc-espaces">Réserver un espace</a>
+          <span id="desc-espaces" class="sr-only">Informations et réservation des espaces de travail</span>
+        </article>
+
+        <article class="service-card">
+          <h3>Ressources en ligne</h3>
+          <p>Bases de données, presse numérique, livres électroniques accessibles 24h/24.</p>
+          <a href="./not-implemented.html" aria-describedby="desc-ressources">Accéder aux ressources</a>
+          <span id="desc-ressources" class="sr-only">Catalogue des ressources numériques disponibles</span>
+        </article>
+
+        <article class="service-card">
+          <h3>Accompagnement numérique</h3>
+          <p>Ateliers d'initiation, aide personnalisée pour vos démarches administratives en ligne.</p>
+          <a href="./not-implemented.html" aria-describedby="desc-accompagnement">S'inscrire aux ateliers</a>
+          <span id="desc-accompagnement" class="sr-only">Programmes et inscriptions aux ateliers numériques</span>
+        </article>
+      </div>
     </section>
 
-    <!-- Accessibilité -->
-    <section aria-labelledby="titre-a11y">
-      <h2 id="titre-a11y">Accessibilité</h2>
-      <p>Notre site vise la conformité RGAA niveau AA. Retrouvez la <a href="/accessibilite">déclaration d’accessibilité</a>, le <a href="/schema-pluriannuel">schéma pluriannuel</a> et le <a href="/plan-d-actions">plan d’actions</a>.</p>
-    </section>
+   
 
-    <!-- Média (optionnel) -->
-    <section aria-labelledby="titre-video">
-      <h2 id="titre-video">Découvrir la BMVR en 2 minutes</h2>
-      <figure>
-        <video controls preload="metadata" width="640" height="360" poster="assets/apercu-video.jpg">
-          <source src="media/presentation-bmvr.mp4" type="video/mp4">
-          <track kind="subtitles" srclang="fr" src="media/presentation-bmvr.vtt" label="Français">
-          Votre navigateur ne supporte pas la vidéo HTML5. Une <a href="media/presentation-bmvr-transcription.html">transcription textuelle</a> est disponible.
-        </video>
-        <figcaption>Présentation de la bibliothèque (sous-titrée).</figcaption>
-      </figure>
-    </section>
-
-    <!-- Newsletter -->
-    <section aria-labelledby="titre-newsletter">
-      <h2 id="titre-newsletter">S’abonner à la newsletter</h2>
-      <form action="/newsletter" method="post" novalidate aria-describedby="aide-news">
-        <p id="aide-news">Recevez nos actus et événements (désinscription possible à tout moment).</p>
-        <div>
-          <label for="nl-email">Adresse e-mail <span aria-hidden="true">(requis)</span></label>
-          <input type="email" id="nl-email" name="email" autocomplete="email" required aria-invalid="false" />
-        </div>
-        <button type="submit">S’abonner</button>
-        <!-- En cas d’erreur côté serveur, retourner un message clair et lier via aria-describedby -->
-      </form>
-    </section>
 
     <!-- Alerte de service (live region polie si dynamique) -->
     <section aria-live="polite" aria-atomic="true">
@@ -233,32 +229,16 @@
     </section>
   </main>
 
-  <aside aria-label="Informations pratiques">
-    <section aria-labelledby="titre-contact">
-      <h2 id="titre-contact">Contact</h2>
-      <p>Téléphone : <a href="tel:+33400000000">04 00 00 00 00</a></p>
-      <p>E-mail : <a href="mailto:contact@bmvr.nice.fr">contact@bmvr.nice.fr</a></p>
-    </section>
-    <section aria-labelledby="titre-liens-utiles">
-      <h2 id="titre-liens-utiles">Liens utiles</h2>
-      <ul>
-        <li><a href="/tarifs">Tarifs</a></li>
-        <li><a href="/reglement-interieur">Règlement intérieur</a></li>
-        <li><a href="/faq">FAQ</a></li>
-      </ul>
-    </section>
-  </aside>
-
   <footer>
     <section aria-labelledby="titre-pied">
       <h2 id="titre-pied" class="sr-only">Pied de page</h2>
       <p>© Ville de Nice — BMVR</p>
       <nav aria-label="Liens de pied de page">
         <ul>
-          <li><a href="/mentions-legales">Mentions légales</a></li>
-          <li><a href="/politique-confidentialite">Politique de confidentialité</a></li>
-          <li><a href="/accessibilite">Accessibilité</a></li>
-          <li><a href="/plan-du-site">Plan du site</a></li>
+          <li><a href="./not-implemented.html">Mentions légales</a></li>
+          <li><a href="./not-implemented.html">Politique de confidentialité</a></li>
+          <li><a href="./not-implemented.html">Accessibilité</a></li>
+          <li><a href="./not-implemented.html">Plan du site</a></li>
         </ul>
       </nav>
     </section>
