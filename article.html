@@ -4,29 +4,22 @@
   <meta charset="utf-8">
   <title>BMVR Nice — Article : Nice, ville de lecture</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Article de la BMVR de Nice : Le site de la BMVR devient accéssible.">
+  <meta name="description" content="Article de la BMVR de Nice : Le site de la BMVR devient accessible.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Liens d’évitement -->
-  <nav aria-label="Accès rapide" class="skip-links">
-    <a href="#contenu">Aller au contenu</a>
-    <a href="#recherche-site">Aller à la recherche</a>
-    <a href="#menu-principal">Aller au menu</a>
-  </nav>
 
   <!-- En-tête du site -->
-  <header role="banner">
+  <header>
     <div class="brand">
-      
+      <a class="brand-link" href="./index.html" aria-label="Retour à l'accueil BMVR">BMVR Nice</a>
     </div>
 
-    <nav aria-label="Outils du site">
+    <nav aria-label="Outils du site" class="tools-nav">
       <ul>
         <li>
-          <form action="/recherche" method="get" role="search" aria-labelledby="recherche-site-label">
-            <h2 id="recherche-site-label" class="sr-only">Recherche sur le site</h2>
-            <label for="q" id="recherche-site">Rechercher</label>
+          <form id="recherche-site-form" action="/recherche" method="get" role="search" aria-label="Recherche sur le site">
+            <label for="q">Rechercher</label>
             <input type="search" id="q" name="q" placeholder="Titre, auteur, sujet…" autocomplete="on">
             <button type="submit">Rechercher</button>
           </form>
@@ -34,70 +27,109 @@
       </ul>
     </nav>
 
-    <nav id="menu-principal" aria-label="Navigation principale">
+    <nav id="menu-principal" aria-label="Navigation principale" class="main-nav">
       <ul>
-        <li><a href="./index.html" >Accueil</a></li>
+        <li><a href="./index.html">Accueil</a></li>
         <li><a href="./not-implemented.html">Catalogue</a></li>
         <li><a href="./not-implemented.html">Services</a></li>
-        <li><a href="./not-implemented.html" aria-current="page">Événements</a></li>
-        <li><a href="./not-implemented.html">Blog</a></li>
+        <li><a href="./not-implemented.html">Événements</a></li>
+        <li><a href="./article.html" aria-current="page">Blog</a></li>
         <li><a href="./contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Contenu principal -->
-  <main id="contenu" role="main">
+  <main id="contenu">
     <article aria-labelledby="titre-article" itemscope itemtype="https://schema.org/NewsArticle">
-      <header>
+      <header class="article-header">
         <h1 id="titre-article" itemprop="headline">Nice, ville de lecture</h1>
-        <p>
+        <p class="meta">
           <time datetime="2025-10-10" itemprop="datePublished">10 octobre 2025</time> —
           <span itemprop="author" itemscope itemtype="https://schema.org/Person">
             par <span itemprop="name">Équipe BMVR</span>
           </span>
+          <span class="sep" aria-hidden="true">•</span>
+          <span aria-label="Durée de lecture estimée">~3 min</span>
+          <meta itemprop="dateModified" content="2025-10-10">
         </p>
+        <p class="lead">Résumé — Ce billet explique comment la BMVR rend son site accessible (RGAA/WCAG), pour qui et pourquoi, avec des exemples concrets.</p>
+
+
+
+        <!-- Sommaire -->
+        <nav aria-label="Sommaire de l’article" class="toc">
+          <h2 class="sr-only" id="sommaire">Sommaire</h2>
+          <ol>
+            <li><a href="#pourquoi">Pourquoi l’accessibilité</a></li>
+            <li><a href="#profils">Profils concernés</a></li>
+            <li><a href="#mesures">Mesures mises en place</a></li>
+            <li><a href="#benefices">Bénéfices pour tous</a></li>
+            <li><a href="#engagement">Notre engagement</a></li>
+          </ol>
+        </nav>
       </header>
 
-    
-
-      <section itemprop="articleBody">
-        <p>
-          L’accessibilité numérique à la Bibliothèque Municipale de Nice
-
-La Bibliothèque Municipale à Vocation Régionale (BMVR) de Nice n’est pas seulement un lieu de culture et de savoir, c’est aussi un espace inclusif qui veille à ce que chaque usager puisse profiter de ses services, sans barrière.
-
-Rendre un site web accessible, c’est permettre à toutes et à tous, y compris les personnes en situation de handicap, de naviguer facilement, de trouver l’information recherchée et de participer pleinement à la vie culturelle.
-
-L’accessibilité numérique n’est pas une option : c’est un droit. En France, la loi handicap de 2005 impose aux services publics de garantir l’égalité d’accès à l’information. Pour la BMVR, cela signifie mettre en œuvre les recommandations du RGAA (Référentiel Général d’Amélioration de l’Accessibilité), basé sur les normes internationales WCAG.
-
-Concrètement, le site de la bibliothèque s’adapte à différents profils d’utilisateurs :
-
-Les personnes malvoyantes bénéficient d’un bon contraste de couleurs et de textes alternatifs décrivant les images.
-
-Les personnes ayant des difficultés motrices peuvent naviguer uniquement au clavier.
-
-Les contenus multimédias sont accompagnés de sous-titres et de transcriptions, utiles pour les personnes sourdes ou malentendantes.
-
-La structure du site est claire, avec une navigation cohérente et des liens explicites pour simplifier la compréhension.
-
-En rendant son site accessible, la bibliothèque agit pour l’inclusion et l’égalité des chances. Plus encore, elle renforce son rôle de service public : offrir un accès universel à la culture et au savoir.
-
-Cet engagement profite à tout le monde : un site clair et lisible est plus confortable, plus rapide à utiliser et améliore aussi le référencement naturel. En somme, l’accessibilité rend le numérique plus humain.
-
-À travers cette démarche, la BMVR de Nice démontre que l’innovation et la modernité doivent toujours aller de pair avec l’inclusion. C’est une façon concrète de rappeler que la culture est un bien commun, qui doit rester ouvert à toutes et à tous, sans exception.
-</p>
-
+      <!-- Corps de l’article structuré -->
+      <section id="pourquoi" itemprop="articleBody" tabindex="0">
+        <h2>Pourquoi l’accessibilité</h2>
+        <p>La Bibliothèque Municipale à Vocation Régionale (BMVR) de Nice est un lieu de culture et de savoir. Elle veille à ce que chaque usager puisse profiter de ses services sans barrière.</p>
+        <p>Rendre un site web accessible permet à toutes et à tous, y compris aux personnes en situation de handicap, de naviguer facilement, de trouver l’information et de participer à la vie culturelle.</p>
+        <p>En France, la loi handicap de 2005 impose aux services publics de garantir l’égalité d’accès à l’information. La BMVR applique le RGAA, fondé sur les normes internationales WCAG.</p>
       </section>
 
-      <footer aria-label="Pied d’article">
+      <section id="profils" tabindex="0" >
+        <h2>Profils concernés</h2>
+        <ul>
+          <li>Personnes malvoyantes : contraste suffisant, alternatives textuelles aux images.</li>
+          <li>Personnes avec difficultés motrices : navigation au clavier possible partout.</li>
+          <li>Personnes sourdes ou malentendantes : sous-titres et transcriptions pour les contenus multimédias.</li>
+          <li>Personnes avec besoins cognitifs spécifiques (autisme, TDAH, dyslexie) : structure claire, langage simple, options de confort.</li>
+        </ul>
+      </section>
+
+      <section id="mesures" tabindex="0">
+        <h2>Mesures mises en place</h2>
+        <h3>Structure & navigation</h3>
+        <ul>
+          <li>Liens d’évitement vers contenu, recherche et menu.</li>
+          <li>Sommaire d’article avec ancres pour se repérer.</li>
+          <li>Ordre logique au clavier et focus visible.</li>
+        </ul>
+
+        <h3>Contenus</h3>
+        <ul>
+          <li>Images avec textes alternatifs pertinents.</li>
+          <li>Vidéos sous-titrées + transcription.</li>
+          <li>Langage clair, paragraphes courts, listes à puces.</li>
+        </ul>
+
+        <h3>Présentation</h3>
+        <ul>
+          <li>Longueur de ligne limitée (~70ch), interlignage confortable.</li>
+          <li>Bouton “Mode lecture confortable” pour augmenter l’espacement et couper les animations.</li>
+          <li>Contrastes vérifiés et focus visibles.</li>
+        </ul>
+      </section>
+
+      <section id="benefices" tabindex="0">
+        <h2>Bénéfices pour tous</h2>
+        <p>Un site clair et lisible est plus confortable, plus rapide à utiliser et mieux référencé. L’accessibilité rend le numérique plus humain et utile à chacun.</p>
+      </section>
+
+      <section id="engagement" tabindex="0">
+        <h2>Notre engagement</h2>
+        <p>La BMVR de Nice s’engage à maintenir et améliorer en continu l’accessibilité de ses services numériques. Vos retours sont bienvenus pour nous aider à progresser.</p>
+      </section>
+
+      <footer aria-label="Pied d’article" class="article-footer">
         <p>Catégorie : <a href="./not-implemented.html">Actualités</a></p>
       </footer>
     </article>
   </main>
 
   <!-- Pied de page -->
-  <footer role="contentinfo">
+  <footer>
     <section aria-labelledby="titre-pied">
       <h2 id="titre-pied" class="sr-only">Pied de page</h2>
       <p>© Ville de Nice — BMVR</p>
