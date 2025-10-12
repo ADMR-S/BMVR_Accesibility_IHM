@@ -1,20 +1,76 @@
-Couleurs : trop flashy ? (tableau horaires)
+A LIRE :
+    règles générales : 
+    https://accessibility-for-teams.com/accessibility-for-ux-designers
 
-Vidéo
+    Sites gouvernement : 
+    https://accessibilite.numerique.gouv.fr/
+    https://design.numerique.gouv.fr/
 
-Prendre en compte les 4 types de handicap
+DOC SI QUESTION SPECIFIQUE :
+    Bible accessibilité :
+    https://www.w3.org/Translations/WCAG21-fr/#abstract
 
-Personnes DYS, autistes : éviter les gros blocs de texte (ATTENTION ARTICL)
-sedruos sennosrep
+    Doc ARIA : 
+    https://www.w3.org/TR/wai-aria-1.1/
 
-Modif image 
 
-Sortir url bannière du css
+OUTILS DE DEV A INSTALLER : 
+    https://chromewebstore.google.com/detail/accessibility-insights-fo/pbjjkligggfmakdaogkfomddhfmpjeni
+    https://chromewebstore.google.com/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi
+    https://chromewebstore.google.com/detail/wcag-color-contrast-check/plnahcmalebffmaghcpcmpaciebdhgdf
+    https://chromewebstore.google.com/detail/assistant-rgaa/cgpmofepeeiaaljkcclfldhaalfpcand?hl=fr
 
-snap menu contextuel lors du scroll
+    validateur HTML W3C : 
+    https://validator.w3.org/
 
-bannière cliquable lien retour vers accueil ?
 
-dissocier bannière et outils de navigation ?
+TODO : 
 
-clean (mettre code css dans css)
+    Passer TOUTES les Checklists : 
+    https://accessibility.voxmedia.com/#designers
+    https://not-checklist.intopia.digital/
+    https://design-accessible.fr/checklist#livrables
+
+
+    Assurer lecture NVDA agréable (Passer CHAQUE bloc au lecteur pour vérifier, notamment horaires)
+
+    Couleurs : prendre référentiel pour contrastes, codes couleurs ? outils disponibles ?
+    https://stephaniewalter.design/fr/blog/accessibilite-et-couleurs-outils-et-ressources-pour-concevoir-des-produits-accessible/
+
+    Prendre en compte les 4 types de handicap
+
+    Personnes DYS, autistes : éviter les gros blocs de texte (ATTENTION ARTICLE)
+    sedruos sennosrep
+
+    Assurer accessibilité images + en ajouter une dans la page blog ? 
+
+    snap menu contextuel lors du scroll
+
+    Rendre + joli, changer bannière
+
+    Bannière cliquable : retour vers accueil ? 
+
+    clean + mettre code css dans css
+
+    Ajouter icônes pour personnes DYS
+
+    utiliser librairie js yt-dlp pour extraire les sous-titres ?
+    OU voir RapidAPI pour la transcription
+
+    Proposer un mode nuit au site "mode de contraste élevé" et intégrer aux liens d'évitement (chanel)
+
+    Ajouter bouton "se connecter"
+
+    Implémenter page "accessibilité" (footer) et décrire ce qu'on a fait ?
+
+    FAIRE UN AUDIT FINAL AVEC LA GRILLE A AJOUTER A LA PRESENTATION
+
+Présentation :
+
+    grille notation : 
+    https://docs.google.com/spreadsheets/d/1JBP69WyjyQsB25Gmguivp_QGhzgq8-BbRUJSAEkuAIo/edit?gid=0#gid=0
+
+    Définir Personas
+    Parler de la répartition du travail
+    Parler des enjeux du code accessible
+    Sémantique du code 

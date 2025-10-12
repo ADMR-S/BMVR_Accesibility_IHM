@@ -141,7 +141,7 @@ header {
   margin-right: -50vw;
 
   /* Image de bannière */
-  background-image: url("bmvr.jpg");
+  background-image: url("images/bmvr.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -206,6 +206,7 @@ input[type="submit"],
   transition: background 0.2s ease;
 }
 
+
 button,
 .btn-primary {
   background: var(--magenta);
@@ -225,6 +226,51 @@ button:hover,
 .btn-secondary:hover {
   background: var(--jaune-hover);
 }
+/* ===============================
+   Box recherche arrondie
+   =============================== */
+form[role="search"] {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+form[role="search"] input[type="search"] {
+  border: 2px solid var(--border);
+  border-radius: 15px; 
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+form[role="search"] input[type="search"]:focus-visible {
+  border-color: var(--magenta);
+  box-shadow: 0 0 0 3px var(--focus);
+}
+
+form[role="search"] button {
+  background: var(--magenta);
+  border: none;
+  border-radius: 20%;
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+form[role="search"] button:hover {
+  background: var(--magenta-hover);
+}
+
+form[role="search"] button img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
 
 /* ===============================
    Sections et articles
@@ -462,33 +508,33 @@ img, video {
       margin-bottom: 0.5rem;
     }
 
-    /* Accessibilité minimale intégrée (peut être déplacée dans style.css) */
-    :focus-visible {
-      outline: 3px solid #0a7;
-      outline-offset: 2px;
-    }
-    .skip-links a {
-      position: absolute;
-      left: -9999px;
-      top: 0;
-    }
-    .skip-links a:focus,
-    .skip-links a:focus-visible {
-      left: 0;
-      background: #fff;
-      padding: .5rem 1rem;
-      z-index: 1000;
-      box-shadow: 0 0 0 3px #0a7;
-    }
-    .sr-only {
-      position: absolute !important;
-      width: 1px; height: 1px;
-      padding: 0; margin: -1px;
-      overflow: hidden; clip: rect(0,0,0,0);
-      white-space: nowrap; border: 0;
-    }
-    .table-wrapper {
-      overflow: auto;
-      -webkit-overflow-scrolling: touch;
-      max-width: 100%;
-    }
+  /* Accessibilité minimale intégrée (peut être déplacée dans style.css) */
+  :focus-visible {
+    outline: 3px solid #0a7;
+    outline-offset: 2px;
+  }
+  .skip-links a {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+  }
+  .skip-links a:focus,
+  .skip-links a:focus-visible {
+    left: 0;
+    background: #fff;
+    padding: .5rem 1rem;
+    z-index: 1000;
+    box-shadow: 0 0 0 3px #0a7;
+  }
+  .sr-only {
+    position: absolute !important;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0,0,0,0);
+    white-space: nowrap; border: 0;
+  }
+  .table-wrapper {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+  }

@@ -2,53 +2,14 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>BMVR Nice — Accueil</title>
+  <title>BMVR Nice</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Bienvenue sur le site de la BMVR de Nice : catalogue, horaires, services, événements, informations d’accessibilité.">
   <link rel="stylesheet" href="style.css">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <!-- Liens d’évitement -->
-  <nav aria-label="Accès rapide" class="skip-links">
-    <a href="#contenu">Aller au contenu</a>
-    <a href="#recherche">Aller à la recherche</a>
-    <a href="#tab-horaires">Aller aux horaires</a>
-    <a href="#menu-principal">Aller au menu</a>
-  </nav>
-
-  <header role="banner">
-    <div class="brand" aria-label="Image de la Bibliothèque municipale à vocation régionale de Nice" tabindex="0">
-      <!-- Logo ou nom de la bibliothèque -->
-
-    </div>
-
-    <!-- Outils -->
-    <nav aria-label="Rechercher sur le site" style="list-style: none; padding: 0; margin: 0;">
-    <ul style="list-style: none; padding: 0; margin: 0;">
-      <li>
-        <form action="./not-implemented.html" method="get" role="search" aria-labelledby="recherche-site-label">
-          <h2 id="recherche-site-label" class="sr-only">Recherche sur le site</h2>
-          <label for="q" id="recherche-site"></label>
-          <input type="search" id="recherche" name="q" autocomplete="on" placeholder="Titre, auteur, sujet…" style="width: 250px; padding: 1em;">
-          <button type="submit">Rechercher</button>
-        </form>
-      </li>
-    </ul>
-  </nav>    
-
-    <!-- Navigation principale -->
-    <nav id="menu-principal" aria-label="Navigation principale, 6 boutons">
-      <ul>
-        <li><a href="./index.html" aria-current="page">Accueil</a></li>
-        <li><a href="./not-implemented.html">Catalogue</a></li>
-        <li><a href="./not-implemented.html">Services</a></li>
-        <li><a href="./not-implemented.html">Événements</a></li>
-        <li><a href="./article.html">Blog</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
+  
   <main id="contenu"> 
     <!-- Héros -->
     <section aria-labelledby="titre-hero">
@@ -291,8 +252,6 @@
       </div>
     </section>
 
-   
-
 
     <!-- Alerte de service (live region polie si dynamique) -->
     <section aria-live="polite" aria-atomic="true">
@@ -300,19 +259,6 @@
     </section>
   </main>
 
-  <footer>
-    <section aria-labelledby="titre-pied">
-      <h2 id="titre-pied" class="sr-only">Pied de page</h2>
-      <p>© Ville de Nice — BMVR</p>
-      <nav aria-label="Liens de pied de page">
-        <ul>
-          <li><a href="./not-implemented.html">Mentions légales</a></li>
-          <li><a href="./not-implemented.html">Politique de confidentialité</a></li>
-          <li><a href="./not-implemented.html">Accessibilité</a></li>
-          <li><a href="./not-implemented.html">Plan du site</a></li>
-        </ul>
-      </nav>
-    </section>
-  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
