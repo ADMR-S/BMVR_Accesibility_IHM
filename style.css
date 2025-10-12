@@ -13,7 +13,7 @@
   /* Couleurs de marque */
   --magenta: #8a004f;         /* magenta foncé, contraste 9:1 sur fond clair */
   --magenta-hover: #600036;
-  --jaune: #ffcc00;           /* jaune lumineux mais lisible sur fond sombre */
+  --jaune: #ffcc00af;           /* jaune lumineux mais lisible sur fond sombre */
   --jaune-hover: #e6b800;
 
   /* Autres */
@@ -68,7 +68,7 @@ h1 {
 
 h2 {
   font-size: 1.8rem;
-  color: var(--jaune);
+  color: var(--text);
 }
 
 h3 {
