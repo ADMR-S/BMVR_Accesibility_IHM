@@ -14,9 +14,8 @@
   <section aria-labelledby="titre-blog">
     <h1 id="titre-blog">Blog de la BMVR de Nice</h1>
 
-    <article aria-labelledby="titre-article" itemscope itemtype="https://schema.org/NewsArticle">
-      <header class="article-header">
-        <h2 id="titre-article" itemprop="headline">Nice, ville de lecture</h1>
+    <article aria-labelledby="titre-article" itemscope itemtype="https://schema.org/NewsArticle" role="region">
+        <h2 id="titre-article" itemprop="headline">Nice, ville de lecture - désormais inclusive !</h2>
         <p class="meta">
           <time datetime="2025-10-10" itemprop="datePublished">10 octobre 2025</time> —
           <span itemprop="author" itemscope itemtype="https://schema.org/Person">
@@ -26,31 +25,40 @@
           <span aria-label="Durée de lecture estimée">~3 min</span>
           <meta itemprop="dateModified" content="2025-10-10">
         </p>
-        <p class="lead">Ce billet explique comment la BMVR rend son site accessible (RGAA/WCAG), pour qui et pourquoi, avec des exemples concrets.</p>
+        <p class="lead">Ce billet explique comment la BMVR rend son site accessible (RGAA/WCAG) avec des exemples concrets.</p>
 
         <a href="article.html"> Lire l'article </a>
     </article>
 
     
     <!--Vidéo-->
-    <article aria-labelledby="titre-video">
-      <h2>Présentation vidéo : <em>La poule qui fit le tour du monde</em></h2>
-
-      <h3 id="titre-video">Lecture de l’histoire "La poule qui fit le tour du monde"</h3>
-
-      <div class="video-container" role="group" aria-label="Vidéo YouTube avec sous-titres activables">
-        <iframe
-          src="https://www.youtube.com/embed/w9o_0mHoSEQ?cc_load_policy=1"
-          title="Lecture du livre 'La poule qui fit le tour du monde'"
-          allowfullscreen
-          aria-describedby="description-video">
-        </iframe>
-      </div>
-
-      <p id="description-video">
-        Cette vidéo présente une lecture du livre <em>Monique, la poule qui fit le tour du monde</em>.
-        Les sous-titres peuvent être activés directement dans le lecteur YouTube.
+    <article aria-labelledby="titre-presentation-video" role="region">
+      <h2 id="titre-presentation-video">Coup de coeur : <em>La poule qui fit le tour du monde</em></h2>
+      <p class="meta">
+        <time datetime="2025-10-03" itemprop="datePublished">03 octobre 2025</time> —
+        <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          par <span itemprop="name">Suzanne Von Kaenel</span>
+        </span>
+        <span class="sep" aria-hidden="true">•</span>
+        <span aria-label="Durée de visionnage">~2 min</span>
+        <meta itemprop="dateModified" content="2025-10-03">
       </p>
+      <p id="description-video">
+        Cette vidéo présente une lecture du livre <em>La poule qui fit le tour du monde</em> de Guirec Soudée.
+        Les sous-titres peuvent être activés directement dans le lecteur YouTube. Une transcription est disponible en fin d'article.
+      </p>
+      <div role="region" aria-labelledby="titre-video">
+        <h3 id="titre-video">VIDÉO : Lecture de l’histoire <em>La poule qui fit le tour du monde</em></h3>
+        <div class="video-container" role="group" aria-labelled="Vidéo youtube avec sous-titres activables">
+          <iframe
+            src="https://www.youtube.com/embed/w9o_0mHoSEQ?cc_load_policy=1"
+            title="Lecture du livre 'La poule qui fit le tour du monde'"
+            allowfullscreen
+            aria-describedby="description-video">
+          </iframe>
+        </div>
+      
+      </div>
 
       <!-- Transcription textuelle -->
       <section class="transcription" aria-labelledby="titre-transcription">

@@ -2,6 +2,8 @@ A LIRE :
     règles générales : 
     https://accessibility-for-teams.com/accessibility-for-ux-designers
 
+    Personnes DYS, autistes : éviter les gros blocs de texte (ATTENTION ARTICLE)
+
     Sites gouvernement : 
     https://accessibilite.numerique.gouv.fr/
     https://design.numerique.gouv.fr/
@@ -26,52 +28,45 @@ OUTILS DE DEV A INSTALLER :
 
 TODO : 
 
+    Assurer lecture NVDA agréable (Passer CHAQUE bloc au lecteur pour vérifier, notamment horaires)
+
+    Ajouter icônes pour personnes DYS
+
+    Proposer un mode nuit au site "mode de contraste élevé" et intégrer aux liens d'évitement (voir site chanel)
+
+    Highlight la bonne section (blog, accueil) selon la page où l'on se trouve
+
+    Implémenter page "accessibilité" (cliquable dans le footer) et décrire ce qu'on a fait ?
+
     Passer TOUTES les Checklists : 
     https://accessibility.voxmedia.com/#designers
     https://not-checklist.intopia.digital/
     https://design-accessible.fr/checklist#livrables
 
 
-    Assurer lecture NVDA agréable (Passer CHAQUE bloc au lecteur pour vérifier, notamment horaires)
-
     Couleurs : prendre référentiel pour contrastes, codes couleurs ? outils disponibles ?
     https://stephaniewalter.design/fr/blog/accessibilite-et-couleurs-outils-et-ressources-pour-concevoir-des-produits-accessible/
 
-    Prendre en compte les 4 types de handicap
-
-    Personnes DYS, autistes : éviter les gros blocs de texte (ATTENTION ARTICLE)
-    sedruos sennosrep
-
-    Assurer accessibilité images + en ajouter une dans la page blog ? 
-
-    snap menu contextuel lors du scroll
-
-    Créer page blog avec les articles en preview + une page par article (accessibilité & présentation vidéo)
+    Assurer accessibilité images + en ajouter une dans la page article ? 
 
     Rendre + joli, changer bannière
 
+    snap menu contextuel lors du scroll
+
     Bannière cliquable : retour vers accueil ? 
+
+    Ajouter bouton "se connecter"
 
     clean + mettre code css dans css
 
-    Ajouter icônes pour personnes DYS
+    Faire alertes en fin d'index.html ou SUPPRIMER LA SECTION CORRESPONDANTE (bloc gris en fin d'accueil)
 
     utiliser librairie js yt-dlp pour extraire les sous-titres ?
     OU voir RapidAPI pour la transcription
 
-    Proposer un mode nuit au site "mode de contraste élevé" et intégrer aux liens d'évitement (chanel)
-
-    Ajouter bouton "se connecter"
-
-    Highlight la bonne section (blog, accueil) selon la page où l'on se trouve
-
-    Faire alertes en fin d'index ou supprimer la section corresepondante
-
-    Implémenter page "accessibilité" (footer) et décrire ce qu'on a fait ?
+Présentation :
 
     FAIRE UN AUDIT FINAL AVEC LA GRILLE A AJOUTER A LA PRESENTATION
-
-Présentation :
 
     grille notation : 
     https://docs.google.com/spreadsheets/d/1JBP69WyjyQsB25Gmguivp_QGhzgq8-BbRUJSAEkuAIo/edit?gid=0#gid=0
