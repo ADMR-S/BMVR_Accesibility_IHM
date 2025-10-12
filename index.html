@@ -61,52 +61,6 @@
       <p><a href="./not-implemented.html">Tous les événements</a></p>
     </section>
 
-
-    <!-- Horaires & accès -->
-      <h2 id="titre-horaires">Horaires et accès</h2>
-
-      <!-- Conteneur défilable au clavier -->
-        <table id="tab-horaires"  tabindex="0">
-          <caption id="cap-horaires"><h3>Horaires d’ouverture de la BMVR de Nice</h3></caption>
-          <thead>
-            <tr>
-              <th scope="col" id="col-jour">Jour</th>
-              <th scope="col" id="col-horaires">Horaires</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row" id="row-mardi">Mardi</th>
-              <td headers="row-mardi col-horaires">10:00 – 18:00</td>
-            </tr>
-            <tr>
-              <th scope="row" id="row-mercredi">Mercredi</th>
-              <td headers="row-mercredi col-horaires">10:00 – 18:00</td>
-            </tr>
-            <tr>
-              <th scope="row" id="row-jeudi">Jeudi</th>
-              <td headers="row-jeudi col-horaires">12:00 – 19:00</td>
-            </tr>
-            <tr>
-              <th scope="row" id="row-vendredi">Vendredi</th>
-              <td headers="row-vendredi col-horaires">12:00 – 19:00</td>
-            </tr>
-            <tr>
-              <th scope="row" id="row-samedi">Samedi</th>
-              <td headers="row-samedi col-horaires">10:00 – 18:00</td>
-            </tr>
-            <tr>
-              <th scope="row" id="row-dimanche-lundi">Dimanche et Lundi</th>
-              <td headers="row-dimanche-lundi col-horaires">Fermé</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3 id="titre-acces">Accès</h3>
-        <p>Adresse : 2 Place Yves Klein, 06300 Nice.</p>
-        <p>Transports : Tram L1 — Arrêt “Garibaldi”, accès PMR disponible.</p>
-
-
     <!-- Services -->
     <section aria-labelledby="titre-services">
       <h2 id="titre-services">Nos services</h2>
@@ -149,6 +103,54 @@
         </article>
       </div>
     </section>
+
+    <!-- Horaires & accès -->
+      <section id="informations-pratiques" aria-labelledby="informations-pratiques-label" class="infos-pratiques">
+      <h2 id="informations-pratiques-label">Informations pratiques</h2>
+
+      <!-- Conteneur défilable au clavier -->
+        <table id="tab-horaires"  tabindex="0" aria-labelledby="cap-horaires">
+          <caption id="cap-horaires"><h3>Horaires d’ouverture de la BMVR de Nice</h3></caption>
+          <thead>
+            <tr>
+              <th scope="col" id="col-jour">Jour</th>
+              <th scope="col" id="col-horaires">Horaires</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" id="row-mardi">Mardi</th>
+              <td headers="row-mardi col-horaires">10:00 – 18:00</td>
+            </tr>
+            <tr>
+              <th scope="row" id="row-mercredi">Mercredi</th>
+              <td headers="row-mercredi col-horaires">10:00 – 18:00</td>
+            </tr>
+            <tr>
+              <th scope="row" id="row-jeudi">Jeudi</th>
+              <td headers="row-jeudi col-horaires">12:00 – 19:00</td>
+            </tr>
+            <tr>
+              <th scope="row" id="row-vendredi">Vendredi</th>
+              <td headers="row-vendredi col-horaires">12:00 – 19:00</td>
+            </tr>
+            <tr>
+              <th scope="row" id="row-samedi">Samedi</th>
+              <td headers="row-samedi col-horaires">10:00 – 18:00</td>
+            </tr>
+            <tr>
+              <th scope="row" id="row-dimanche-lundi">Dimanche et Lundi</th>
+              <td headers="row-dimanche-lundi col-horaires">Fermé</td>
+            </tr>
+          </tbody>
+        </table>
+
+          <div aria-labelledby="titre-acces" tabindex="0">
+            <h3 id="titre-acces">Accès</h3>
+            <p>Adresse : 2 Place Yves Klein, 06300 Nice.</p>
+            <p>Transports : Tram L1 — Arrêt “Garibaldi”, accès PMR disponible.</p>
+          </div>
+        </section>
 
 
     <!-- Alerte de service (live region polie si dynamique) -->

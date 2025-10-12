@@ -10,10 +10,12 @@
 <body>
     
     <main id="contenu">
-        <section id="contact" aria-labelledby="titre-contact" tabindex="0">
-            <h2 id="titre-contact">Nous contacter</h2>
+        <div id="contact" aria-labelledby="titre-contact" tabindex="0">
+            <h1 id="titre-contact">Nous contacter</h1>
             <p>Une question sur les prêts, vos réservations ou les activités ? Envoyez-nous un message.</p>
-
+        </div>
+        <section aria-labelledby="titre-formulaire">
+            <h2 id="titre-formulaire">Formulaire de contact</h2>
             <form action="#" method="post" aria-describedby="form-info" class="contact-form">
                 <p id="form-info" class="sr-only">Tous les champs marqués d’un astérisque (*) sont obligatoires.</p>
 
@@ -46,9 +48,10 @@
                     <button type="submit">Envoyer le message</button>
                 </div>
             </form>
+            </section>
 
             <section class="infos" aria-labelledby="infos-contact" tabindex="0">
-                <h3 id="infos-contact">Informations de contact</h3>
+                <h2 id="infos-contact">Informations de contact</h2>
                 <ul>
                     <li>
                         <strong>Téléphone :</strong>
@@ -64,13 +67,12 @@
                     </li>
                 </ul>
             </section>
-        </section>
+        
 
-        <aside aria-labelledby="infos-pratiques" tabindex="0">
-            <h3 id="infos-pratiques">Informations pratiques</h3>
+            <h2 id="infos-pratiques">Informations pratiques</h2>
             
             <section aria-labelledby="horaires">
-                <h4 id="horaires">Horaires</h4>
+                <h3 id="horaires">Horaires</h3>
                 <p>
                     Lundi — Vendredi : 10h — 19h<br>
                     Samedi : 10h — 17h<br>
@@ -78,14 +80,13 @@
                 </p>
             </section>
         <section id="acces" aria-labelledby="titre-acces">
-          <h2 id="titre-acces">Accès</h2>
+          <h3 id="titre-acces">Accès</h3>
           
           <dl>
               <dt>Adresse : 2 Place Yves Klein, 06300 Nice.</dt>
               <dt>Transports : Tram L1 — Arrêt “Garibaldi”, accès PMR disponible.</dt>
           </dl>
         </section>
-        </aside>
     </main>
 
     <script src="script.js"></script>

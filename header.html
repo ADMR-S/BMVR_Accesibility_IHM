@@ -2,8 +2,7 @@
   <nav aria-label="Accès rapide" class="skip-links">
     <a href="#contenu">Aller au contenu</a>
     <a href="#recherche">Aller à la recherche</a>
-    <a href="#tab-horaires">Aller aux horaires</a>
-    <a href="#menu-principal">Aller au menu</a>
+    <a href="#navigation-principale">Aller à la navigation</a>
   </nav>
 
   <header>
@@ -11,27 +10,24 @@
     </div>
 
     <!-- Navigation principale -->
-    <div id="menu-principal" aria-label="Menu principal">
+    <div id="menu-principal" aria-labelledby="menu-principal-label">
+    <h2 id="menu-principal-label" class="sr-only">Menu principal</h2>
+
       <!-- Outils -->
-    <search aria-label="Rechercher sur le site" style="list-style: none; padding: 0; margin: 0;">
-    
-      <ul style="list-style: none; padding: 0; margin: 0;">
-        <li>
-          <form action="./not-implemented.html" method="get" role="search" aria-labelledby="recherche-site-label">
-            <h2 id="recherche-site-label" class="sr-only">Recherche sur le site</h2>
-            <label for="q" id="recherche-site"></label>
-            <input type="search" id="recherche" name="q" autocomplete="on" placeholder="Saisir votre recherche..." style="width: 250px; padding: 1em;">
-  <!--           <button type="submit">Rechercher</button>
-            <img src="/loupe.png" alt="bouton recherche"> -->
-            <button type="submit">
-              <img src="images/magnifying-glass-solid-full.svg" alt="Icône de loupe" width="30" height="30" aria-hidden="true">
-              <span class="sr-only">Rechercher</span>
-            </button>
-          </form>
-        </li>
-      </ul>
-    </search>
+    <section role="search" aria-labelledby="search-title" style="list-style: none; padding: 0; margin: 0;">
+      <h3 id="search-title" class="sr-only">Rechercher sur le site</h3>
+      <form action="./not-implemented.html" method="get">
+        <label for="q" id="recherche-site" class="sr-only">Recherche sur le site</label>
+        <input type="search" id="recherche" name="q" autocomplete="on" placeholder="Saisir votre recherche..." style="width: 250px; padding: 1em;">
+        <button type="submit">
+          <img src="images/magnifying-glass-solid-full.svg" alt="Icône de loupe" width="30" height="auto" aria-hidden="true">
+          <span class="sr-only">Rechercher</span>
+        </button>
+      </form>
+    </section>
+
     <nav id="navigation-principale" aria-label="Navigation principale">
+      <h3 id="navigation-principale-label" class="sr-only">Navigation principale</h3>
       <ul>
         <li><a href="./index.html" aria-current="page">Accueil</a></li>
         <li><a href="./not-implemented.html">Catalogue</a></li>
@@ -39,7 +35,6 @@
         <li><a href="./not-implemented.html">Événements</a></li>
         <li><a href="./blog.html">Blog</a></li>
         <li><a href="./contact.html">Contact</a></li>
-        
       </ul>
     </nav>
   </div>

@@ -267,8 +267,8 @@ form[role="search"] button:hover {
 }
 
 form[role="search"] button img {
-  width: 1.2rem;
-  height: 1.2rem;
+  width: auto; /* Ajustement automatique pour correspondre visuellement */
+  height: 1rem; /* Correspond à la hauteur du texte */
 }
 
 
