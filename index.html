@@ -4,59 +4,26 @@
   <meta charset="utf-8">
   <title>BMVR Nice — Accueil</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Bienvenue sur la BMVR de Nice : catalogue, horaires, services, événements, informations d’accessibilité.">
+  <meta name="description" content="Bienvenue sur le site de la BMVR de Nice : catalogue, horaires, services, événements, informations d’accessibilité.">
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* Accessibilité minimale intégrée (peut être déplacée dans style.css) */
-    :focus-visible {
-      outline: 3px solid #0a7;
-      outline-offset: 2px;
-    }
-    .skip-links a {
-      position: absolute;
-      left: -9999px;
-      top: 0;
-    }
-    .skip-links a:focus,
-    .skip-links a:focus-visible {
-      left: 0;
-      background: #fff;
-      padding: .5rem 1rem;
-      z-index: 1000;
-      box-shadow: 0 0 0 3px #0a7;
-    }
-    .sr-only {
-      position: absolute !important;
-      width: 1px; height: 1px;
-      padding: 0; margin: -1px;
-      overflow: hidden; clip: rect(0,0,0,0);
-      white-space: nowrap; border: 0;
-    }
-    .table-wrapper {
-      overflow: auto;
-      -webkit-overflow-scrolling: touch;
-      max-width: 100%;
-    }
-  </style>
 </head>
 <body>
   <!-- Liens d’évitement -->
   <nav aria-label="Accès rapide" class="skip-links">
     <a href="#contenu">Aller au contenu</a>
     <a href="#recherche">Aller à la recherche</a>
-    <a href="#tab-horaires">Aller aux horaires</a><!-- nouveau -->
+    <a href="#tab-horaires">Aller aux horaires</a>
     <a href="#menu-principal">Aller au menu</a>
   </nav>
 
   <header role="banner">
-    <div class="brand">
-      <a href="/" rel="home">
-        <!--<img src="bmvr.jpg" alt="BMVR Nice — Bibliothèque municipale à vocation régionale">-->
-      </a>
+    <div class="brand" aria-label="Image de la Bibliothèque municipale à vocation régionale de Nice" tabindex="0">
+      <!-- Logo ou nom de la bibliothèque -->
+
     </div>
 
     <!-- Outils -->
-    <nav aria-label="Outils du site" style="list-style: none; padding: 0; margin: 0;">
+    <nav aria-label="Rechercher sur le site" style="list-style: none; padding: 0; margin: 0;">
     <ul style="list-style: none; padding: 0; margin: 0;">
       <li>
         <form action="./not-implemented.html" method="get" role="search" aria-labelledby="recherche-site-label">
@@ -70,7 +37,7 @@
   </nav>    
 
     <!-- Navigation principale -->
-    <nav id="menu-principal" aria-label="Navigation principale">
+    <nav id="menu-principal" aria-label="Navigation principale, 6 boutons">
       <ul>
         <li><a href="./index.html" aria-current="page">Accueil</a></li>
         <li><a href="./not-implemented.html">Catalogue</a></li>

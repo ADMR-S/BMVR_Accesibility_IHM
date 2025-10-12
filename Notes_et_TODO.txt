@@ -7,4 +7,14 @@ Prendre en compte les 4 types de handicap
 Personnes DYS, autistes : éviter les gros blocs de texte (ATTENTION ARTICL)
 sedruos sennosrep
 
-Modif iimage 
+Modif image 
+
+Sortir url bannière du css
+
+snap menu contextuel lors du scroll
+
+bannière cliquable lien retour vers accueil ?
+
+dissocier bannière et outils de navigation ?
+
+clean (mettre code css dans css)
