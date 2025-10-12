@@ -8,24 +8,27 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav aria-label="Accès rapide" class="skip-links">
+        <a href="#recherche">Aller à la recherche</a>
+    </nav>
 
   <!-- En-tête du site -->
   <header>
     <div class="brand">
      
     </div>
-
-    <nav aria-label="Outils du site" class="tools-nav">
-      <ul>
+    <nav aria-label="Outils du site" style="list-style: none; padding: 0; margin: 0;">
+      <ul style="list-style: none; padding: 0; margin: 0;">
         <li>
-          <form id="recherche-site-form" action="/recherche" method="get" role="search" aria-label="Recherche sur le site">
-            <label for="q">Rechercher</label>
-            <input type="search" id="q" name="q" placeholder="Titre, auteur, sujet…" autocomplete="on">
+          <form action="./not-implemented.html" method="get" role="search" aria-labelledby="recherche-site-label">
+            <h2 id="recherche-site-label" class="sr-only">Recherche sur le site</h2>
+            <label for="q" id="recherche-site"></label>
+            <input type="search" id="recherche" name="q" autocomplete="on" placeholder="Titre, auteur, sujet…" style="width: 250px; padding: 1em;">
             <button type="submit">Rechercher</button>
           </form>
         </li>
       </ul>
-    </nav>
+    </nav> 
 
     <nav id="menu-principal" aria-label="Navigation principale" class="main-nav">
       <ul>
