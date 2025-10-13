@@ -20,25 +20,22 @@
     </div>
 
     <!-- Navigation principale -->
-    <div id="menu-principal" role="navigation" aria-labelledby="menu-principal-label">
-    <h2 id="menu-principal-label" class="sr-only">Menu principal</h2>
+    <div id="menu-principal" role="navigation" aria-label="Menu principal">
 
       <!-- Outils -->
-    <section role="search" aria-labelledby="search-title" style="list-style: none; padding: 0; margin: 0;">
-      <h3 id="search-title" class="sr-only">Rechercher sur le site</h3>
+    <section role="search" aria-label="Rechercher sur le site" style="list-style: none; padding: 0; margin: 0;">
       <form id="search-form" action="./not-implemented.html" method="get">
         <label for="recherche" id="recherche-site" class="sr-only">Recherche sur le site</label>
         <input type="search" id="recherche" name="q" autocomplete="on" placeholder="Saisir votre recherche..." style="width: 250px; padding: 1em;">
-        <button type="submit">
+        <button type="submit" aria-label="Rechercher">
           
           <img src="images/magnifying-glass-solid-full.svg" alt="Icône de loupe" width="30" height="auto" aria-hidden="true">
-          <span class="sr-only">Rechercher</span>
+
         </button>
       </form>
     </section>
 
-    <nav id="navigation-principale" role="navigation" aria-labelledby="navigation-principale-label">
-      <h3 id="navigation-principale-label" class="sr-only">Navigation principale</h3>
+    <nav id="navigation-principale" role="navigation" aria-label="Navigation principale">
       <ul>
         <li><a href="./index.html">Accueil</a></li>
         <li><a href="./not-implemented.html">Catalogue</a></li>

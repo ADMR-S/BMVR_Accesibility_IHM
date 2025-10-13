@@ -8,6 +8,7 @@
   --text: #0a0a0a;            /* noir quasi pur : contraste maximal */
   --text-secondary: #2a2a2a;
   --surface: #f2f2f2;
+  --card-bg: #fff;           /* fond pour les cartes / articles (modifiable en mode contraste) */
   --border: #bdbdbd;
 
   /* Couleurs de marque */
@@ -190,6 +191,17 @@ header {
   color: #fff;
 }
 
+/* En mode contraste élevé, le lien actif doit rester lisible : texte noir sur fond clair/contraste */
+body.contrast #menu-principal a[aria-current="page"] {
+  color: #000;
+  background: var(--jaune); /* on peut aussi mettre 'transparent' si tu préfères conserver le magenta en arrière-plan */
+}
+
+/* Liens du menu non-actifs doivent rester en blanc en mode contraste */
+body.contrast #menu-principal a {
+  color: #fff;
+}
+
 /* ===============================
    Boutons
    =============================== */
@@ -283,7 +295,7 @@ main section {
 
 article {
   border-left: 5px solid var(--magenta);
-  background: #fff;
+  background: var(--card-bg);
   padding: 1.5rem;
   border-radius: var(--radius);
   margin-block: 1rem;
@@ -298,7 +310,7 @@ article {
 }
 
 .service-card {
-  background: #fff;
+  background: var(--card-bg);
   border: 2px solid var(--border);
   border-radius: var(--radius);
   padding: 1.5rem;
@@ -480,7 +492,7 @@ img, video {
     }
 
     .transcription {
-      background-color: #fff;
+      background-color: var(--card-bg);
       padding: 1.5rem;
       border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -544,8 +556,9 @@ img, video {
 body.contrast {
   --bg: #0a0a0a;              /* fond sombre */
   --text: #ffffff;            /* texte clair */
-  --text-secondary: #d227aa;
+  --text-secondary: #ffffff;
   --surface: #111;            /* surfaces */
+  --card-bg: #2b2b2b;        /* fond des articles/cartes en mode contraste (gris) */
   --border: #666;
 
   /* Accents lisibles en sombre */
@@ -581,7 +594,7 @@ body.contrast table td {
 }
 body.contrast th {
   background: #222;
-  color: #b52a2a;
+  color: #ffffff;
 }
 
 
