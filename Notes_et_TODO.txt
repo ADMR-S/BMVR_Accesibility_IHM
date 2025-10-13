@@ -34,8 +34,6 @@ TODO :
 
     Proposer un mode nuit au site "mode de contraste élevé" et intégrer aux liens d'évitement (voir site chanel)
 
-    Highlight la bonne section (blog, accueil) selon la page où l'on se trouve
-
     Implémenter page "accessibilité" (cliquable dans le footer) et décrire ce qu'on a fait ?
 
     Passer TOUTES les Checklists : 
