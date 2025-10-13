@@ -32,7 +32,7 @@ TODO :
         Peut-on vraiment TOUT lire via lecteur d'écran sans la souris ?
         Supprimer redondances excessives
 
-    Revoir mise en page page "non-implémentée"
+    NVDA Page non implémentée
     
     Ajouter icônes pour personnes DYS
 

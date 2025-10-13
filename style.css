@@ -581,8 +581,9 @@ body.contrast table td {
 }
 body.contrast th {
   background: #222;
-  color: #ffffff;
+  color: #b52a2a;
 }
+
 
 /* Focus bien visible sur fond sombre */
 body.contrast :focus-visible {
