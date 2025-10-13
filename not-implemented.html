@@ -7,12 +7,8 @@
   <meta name="description" content="Cette page n'est pas encore disponible sur le site de test BMVR Nice.">
   <link rel="stylesheet" href="style.css">
   <style>
-<<<<<<< HEAD
+
     body{
-=======
-    .
-    not-implemented {
->>>>>>> f0c310899791d8436502b3f689d21ca40a5557f7
       display: flex;
       align-items: center;
       justify-content: center;
@@ -36,6 +32,7 @@
       margin-bottom: 1rem;
     }
 
+
     p {
       margin-bottom: 1.5rem;
       color: #111;
@@ -54,31 +51,45 @@
 
     a.button:hover,
     a.button:focus-visible {
-      background: #600036;
+      background: #ffffff;
       outline: 3px solid #ffcc00;
       outline-offset: 3px;
     }
+
+    /* Mode contraste élevé */
+    body.contrast {
+      background: #2a2626;
+    }
+
+    
+
+
+    
   </style>
 </head>
 <body>
+  <!-- Appliquer immédiatement le mode contraste si mémorisé (avant affichage du contenu) -->
+  <script>
+    (function(){
+      try {
+        if (localStorage.getItem('contrast') === 'true') {
+          document.body.classList.add('contrast');
+        }
+      } catch (e) {
+        /* ignore */
+      }
+    })();
+  </script>
   <main role="main" aria-labelledby="titre">
     <section id="not-implemented">
-<<<<<<< HEAD
-    <h1 id="titre">Page non implémentée</h1>
-    <p>Cette section du site de test n’est pas disponible.</p>
-    <a href="index.html" class="button">Retour à l’accueil</a>
-    </section>
-  </main>
 
-=======
       <!-- Espace pour header injecté par script.js -->
-    <h1 id="titre">Page non implémentée</h1>
+    <h1 id="titre" class="txt">Page non implémentée</h1>
     <p>Cette section du site de test n’est pas disponible.</p>
     <a href="index.html" class="button" role="button">Retour à l’accueil</a>
 
   </section>
   </main>
-  <script src="script.js"></script>
->>>>>>> f0c310899791d8436502b3f689d21ca40a5557f7
+
 </body>
 </html>

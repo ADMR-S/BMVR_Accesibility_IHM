@@ -597,6 +597,13 @@ body.contrast th {
   color: #ffffff;
 }
 
+/* En mode contraste, forcer toutes les cellules <td> en fond blanc et texte noir
+   (évite l'alternance sombre/claire et améliore la lisibilité uniforme) */
+body.contrast table td {
+  background: #ffffff !important;
+  color: #000 !important;
+}
+
 
 /* Focus bien visible sur fond sombre */
 body.contrast :focus-visible {
@@ -604,11 +611,13 @@ body.contrast :focus-visible {
   outline-offset: 3px;
 }
 
+
 /* Option : prise en compte de la préférence système
    (on ne force pas, on ajoute juste la classe si besoin côté JS si tu veux)
 */
 @media (prefers-contrast: more) {
   /* rien d’obligatoire ici, la bascule est manuelle avec le bouton */
 }
+
 
 

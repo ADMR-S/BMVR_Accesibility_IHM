@@ -109,12 +109,34 @@
       <h2 id="informations-pratiques-label">Informations pratiques</h2>
 
       <!-- Conteneur défilable au clavier -->
-        <table id="tab-horaires"  tabindex="0" aria-labelledby="cap-horaires">
-          <caption><h3 id="cap-horaires">Horaires d’ouverture de la BMVR de Nice</h3></caption>
+       
+
+        <dl class="sr-only" tabindex="0" aria-labelledby="titre-horaire">
+          <dt>Mardi</dt>
+          <dd>10:00 – 18:00</dd>
+
+          <dt>Mercredi</dt>
+          <dd>10:00 – 18:00</dd>
+
+          <dt>Jeudi</dt>
+          <dd>12:00 – 19:00</dd>
+
+          <dt>Vendredi</dt>
+          <dd>12:00 – 19:00</dd>
+
+          <dt>Samedi</dt>
+          <dd>10:00 – 18:00</dd>
+
+          <dt>Dimanche et Lundi</dt>
+          <dd>Fermé</dd>
+        </dl>
+
+        <table id="tab-horaires" aria-hidden="true">
+          <caption><h3 id="titre-horaire">Horaires d’ouverture de la BMVR de Nice</h3></caption>
           <thead>
             <tr>
-              <th scope="col" id="col-jour">Jour</th>
-              <th scope="col" id="col-horaires">Horaires</th>
+              <th scope="col" id="col-jour" >Jour</th>
+              <th scope="col" id="col-horaires" >Horaires</th>
             </tr>
           </thead>
           <tbody>
@@ -144,6 +166,9 @@
             </tr>
           </tbody>
         </table>
+
+        
+
 
           <div aria-labelledby="titre-acces" tabindex="0">
             <h3 id="titre-acces">Accès</h3>
