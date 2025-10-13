@@ -78,7 +78,7 @@ if (contactForm) {
     event.preventDefault();
 
     const formulaire = event.target;
-    formulaire.innerHTML = '<p id="remerciement">Merci de nous avoir contacté. Nos équipes mettent tout en œuvre pour vous répondre au plus vite.</p>';
+    formulaire.innerHTML = '<p id="remerciement" tabindex="0">Merci de nous avoir contacté. Nos équipes mettent tout en œuvre pour vous répondre au plus vite.</p>';
 
     // Scroller jusqu'à la section de remerciement
     const remerciementSection = document.getElementById('titre-formulaire');
