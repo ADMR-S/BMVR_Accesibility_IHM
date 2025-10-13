@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Accessibilité du site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="contenu">
+    <div class="container">
+        <h1>Accessibilité du site</h1>
+        <section aria-labelledby="titre-intro">
+            <h2 id="titre-intro" class="sr-only">Introduction</h2>
+            <p>
+                Nous nous engageons à rendre ce site accessible à tous les utilisateurs, y compris les personnes en situation de handicap. Voici les principales mesures d’accessibilité mises en place :
+            </p>
+        </section>
+        <section aria-labelledby="titre-fonctionnalites">
+            <h2 id="titre-fonctionnalites">Fonctionnalités d’accessibilité</h2>
+            <ul>
+                <li><strong>Navigation clavier :</strong> Toutes les fonctionnalités du site sont accessibles au clavier (tabulation, entrée, etc.).</li>
+                <li><strong>Contrastes élevés :</strong> Les couleurs et contrastes sont choisis pour garantir une bonne lisibilité.</li>
+                <li><strong>Textes alternatifs :</strong> Toutes les images importantes disposent d’un texte alternatif (<code>alt</code>).</li>
+                <li><strong>Structure sémantique :</strong> Utilisation appropriée des balises HTML (titres, listes, paragraphes) pour faciliter la navigation avec les lecteurs d’écran.</li>
+                <li><strong>Labels explicites :</strong> Les champs de formulaire sont associés à des labels clairs.</li>
+                <li><strong>Zoom et taille du texte :</strong> Le site reste lisible et fonctionnel même avec un zoom important ou une taille de police modifiée.</li>
+                <li><strong>Liens explicites :</strong> Les liens sont compréhensibles hors contexte.</li>
+                <li><strong>Notifications accessibles :</strong> Les messages d’erreur et de confirmation sont annoncés aux technologies d’assistance.</li>
+            </ul>
+        </section>
+        <section aria-labelledby="titre-compatibilite">
+            <h2 id="titre-compatibilite">Compatibilité</h2>
+            <p>
+                Ce site est compatible avec les principaux navigateurs et lecteurs d’écran.
+            </p>
+        </section>
+        <section aria-labelledby="titre-contact">
+            <h2 id="titre-contact">Contact</h2>
+            <p>
+                Si vous rencontrez un problème d’accessibilité, merci de nous contacter via notre
+                <a href="contact.html" class="lien-principal">page de contact</a>
+                pour que nous puissions l’améliorer.
+            </p>
+        </section>
+    </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
