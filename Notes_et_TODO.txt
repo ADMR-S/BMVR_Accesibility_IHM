@@ -43,6 +43,7 @@ TODO :
     https://not-checklist.intopia.digital/
     https://design-accessible.fr/checklist#livrables
 
+    Changer icône souris au survol du formulaire 
 
     Couleurs : prendre référentiel pour contrastes, codes couleurs ? outils disponibles ?
     https://stephaniewalter.design/fr/blog/accessibilite-et-couleurs-outils-et-ressources-pour-concevoir-des-produits-accessible/

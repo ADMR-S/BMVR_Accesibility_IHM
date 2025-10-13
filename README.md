@@ -7,4 +7,5 @@ Pages implémentées :
 
 Accueil
 Blog
+Article
 Contact

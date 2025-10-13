@@ -42,6 +42,7 @@ body {
   line-height: var(--line-height);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  visibility: hidden; /*default pour construire la page en js avant l'affichage*/
 }
 
 /* Zones principales */
