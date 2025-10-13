@@ -136,10 +136,8 @@ header {
 .brand {
   position: relative;
   width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  margin-left: 0;
+  margin-right: 0;
 
   /* Image de bannière */
   background-image: url("images/bmvr.jpg");
@@ -539,4 +537,64 @@ img, video {
     -webkit-overflow-scrolling: touch;
     max-width: 100%;
   }
+
+  /* ===============================
+   Mode contraste élevé (toggle via body.contrast)
+   =============================== */
+body.contrast {
+  --bg: #0a0a0a;              /* fond sombre */
+  --text: #ffffff;            /* texte clair */
+  --text-secondary: #d227aa;
+  --surface: #111;            /* surfaces */
+  --border: #666;
+
+  /* Accents lisibles en sombre */
+  --magenta: #f1ce3e;
+  --magenta-hover: #f1ce3e;
+  --jaune: #f1ce3e;
+  --jaune-hover: #f1ce3e;
+}
+
+/* Assombrir les médias pour éviter l’éblouissement */
+body.contrast img,
+body.contrast video {
+  filter: brightness(60%) contrast(120%);
+}
+
+/* Bannière en image de fond : overlay pour assombrir */
+body.contrast .brand {
+  position: relative;
+}
+body.contrast .brand::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: rgba(0,0,0,.45);
+  pointer-events: none;
+  border-top: 4px solid var(--magenta);
+  border-bottom: 4px solid var(--magenta);
+}
+
+/* Bordures et tables plus franches en mode contraste */
+body.contrast table th,
+body.contrast table td {
+  border-color: var(--border);
+}
+body.contrast th {
+  background: #222;
+  color: #ffffff;
+}
+
+/* Focus bien visible sur fond sombre */
+body.contrast :focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+/* Option : prise en compte de la préférence système
+   (on ne force pas, on ajoute juste la classe si besoin côté JS si tu veux)
+*/
+@media (prefers-contrast: more) {
+  /* rien d’obligatoire ici, la bascule est manuelle avec le bouton */
+}
+
 
