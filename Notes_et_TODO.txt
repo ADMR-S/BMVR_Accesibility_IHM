@@ -28,9 +28,13 @@ OUTILS DE DEV A INSTALLER :
 
 TODO : 
 
-    Assurer lecture NVDA agréable (Passer CHAQUE bloc au lecteur pour vérifier, notamment horaires)
+    Assurer lecture NVDA agréable (Passer CHAQUE bloc au lecteur pour vérifier, notamment tableau horaires)
+        Peut-on vraiment TOUT lire via lecteur d'écran sans la souris ?
+        Supprimer redondances excessives
 
     Ajouter icônes pour personnes DYS
+
+    Réajuster hauteur icône recherche (loupe)
 
     Proposer un mode nuit au site "mode de contraste élevé" et intégrer aux liens d'évitement (voir site chanel)
 
@@ -41,10 +45,12 @@ TODO :
     https://not-checklist.intopia.digital/
     https://design-accessible.fr/checklist#livrables
 
-    Changer icône souris au survol du formulaire 
+    Changer icône souris au survol du formulaire contact
 
     Couleurs : prendre référentiel pour contrastes, codes couleurs ? outils disponibles ?
     https://stephaniewalter.design/fr/blog/accessibilite-et-couleurs-outils-et-ressources-pour-concevoir-des-produits-accessible/
+
+    Essayer de coller + au site de la BMVR (sections manquantes, onglets, type de présentation...)
 
     Assurer accessibilité images + en ajouter une dans la page article ? 
 
