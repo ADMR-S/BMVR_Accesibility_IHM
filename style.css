@@ -139,9 +139,18 @@ a:focus-visible {
   width: 45px; 
   height: auto;
 }
+.icone_accueil {
+  border-radius: 0px;
+  width: 40px; 
+  height: auto;
+}
 body.contrast .icone {
   filter: hue-rotate(104deg) brightness(650%);
 }
+body.contrast .icone_accueil {
+  filter: hue-rotate(101deg) brightness(550%);
+}
+
 /* ===============================
    Header et navigation
    =============================== */
@@ -663,6 +672,7 @@ body.contrast a.button {
 @media (prefers-contrast: more) {
   /* rien d’obligatoire ici, la bascule est manuelle avec le bouton */
 }
+
 
 
 
