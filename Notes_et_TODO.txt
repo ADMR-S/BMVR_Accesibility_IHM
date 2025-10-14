@@ -28,17 +28,21 @@ OUTILS DE DEV A INSTALLER :
 
 TODO : 
 
-    Assurer lecture NVDA agréable (Passer CHAQUE bloc au lecteur pour vérifier, notamment tableau horaires)
+    Ajouter bouton "se connecter" (icône profil)
+
+    (à vérifier) Assurer lecture NVDA agréable (Passer CHAQUE bloc au lecteur pour vérifier, notamment tableau horaires)
         Peut-on vraiment TOUT lire via lecteur d'écran sans la souris ?
         Supprimer redondances excessives
 
-    NVDA Page non implémentée
+    + Check NVDA Page non implémentée
+
+    Prévenir pages non implémentées via NVDA (et éventuellement visuellement au survol)
+    
+    Ajuster couleurs contraste page not-implemented
     
     Ajouter icônes pour personnes DYS
 
     Réajuster hauteur icône recherche (loupe)
-
-    Proposer un mode nuit au site "mode de contraste élevé" et intégrer aux liens d'évitement (voir site chanel)
 
     Implémenter page "accessibilité" (cliquable dans le footer) et décrire ce qu'on a fait ?
 
@@ -61,8 +65,6 @@ TODO :
     snap menu contextuel lors du scroll
 
     Bannière cliquable : retour vers accueil ? 
-
-    Ajouter bouton "se connecter"
 
     clean + mettre code css dans css
 
