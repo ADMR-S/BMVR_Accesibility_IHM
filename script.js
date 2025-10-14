@@ -10,7 +10,7 @@ document.querySelectorAll('.skip-links a').forEach(link => {
 });
 */
 
-// Écran de chargement / éviter le flash pendant l'injection header/footer
+  // Écran de chargement / éviter le flash pendant l'injection header/footer
 document.body.style.visibility = 'hidden';
 
 // ---- utilitaire : init du bouton contraste élevé ----
@@ -87,3 +87,4 @@ if (contactForm) {
     }
   });
 }
+

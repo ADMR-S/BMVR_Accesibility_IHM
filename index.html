@@ -25,7 +25,10 @@
 
     <!-- Actualités -->
     <section aria-labelledby="titre-actus">
-      <h2 id="titre-actus">Actualités</h2>
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <img class="icone" src="images/journal-plie.png" alt="Image décorative représentant des livres empilés" aria-hidden="true">
+        <h2 id="titre-actus">Actualités</h2>
+      </div>
 
       <article>
         <h3>Le site de la BMVR devient accessible !</h3>
@@ -44,8 +47,10 @@
 
     <!-- Événements -->
     <section aria-labelledby="titre-events">
-      <h2 id="titre-events">Événements à venir</h2>
-
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <img class="icone" src="images/evenements.png" alt="Image décorative représentant des événements" aria-hidden="true">
+        <h2 id="titre-events">Événements à venir</h2>
+      </div>
       <article>
         <h3>Atelier lecture facile (FALC)</h3>
         <p id="article-atelier-lecture"><time datetime="2025-10-15T14:00">15 octobre 2025 — 14:00</time>, Salle Ateliers — Atelier d’initiation au FALC.</p>
@@ -63,7 +68,11 @@
 
     <!-- Services -->
     <section aria-labelledby="titre-services">
-      <h2 id="titre-services">Nos services</h2>
+      
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <img class="icone" src="images/poignee-de-main-de-partenariat.png" alt="Image décorative représentant une poignée de main" aria-hidden="true">
+        <h2 id="titre-services">Nos services</h2>
+      </div>
       <p>Découvrez tous les services que la BMVR met à votre disposition pour vous accompagner dans vos recherches et vos projets.</p>
       
       <div class="services-grid">
@@ -106,11 +115,14 @@
 
     <!-- Horaires & accès -->
       <section id="informations-pratiques" aria-labelledby="informations-pratiques-label" class="infos-pratiques">
-      <h2 id="informations-pratiques-label">Informations pratiques</h2>
-
+     
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <img class="icone" src="images/information.png" alt="Image décorative représentant des informations" aria-hidden="true">
+        <h2 id="informations-pratiques-label">Informations pratiques</h2>
+      </div>
       <!-- Conteneur défilable au clavier -->
        
-
+        <h3 class="sr-only">Horaires d’ouverture de la BMVR de Nice</h3>
         <dl class="sr-only" tabindex="0" aria-labelledby="titre-horaire">
           <dt>Mardi</dt>
           <dd>10:00 – 18:00</dd>
@@ -130,7 +142,7 @@
           <dt>Dimanche et Lundi</dt>
           <dd>Fermé</dd>
         </dl>
-
+        
         <table id="tab-horaires" aria-hidden="true">
           <caption><h3 id="titre-horaire">Horaires d’ouverture de la BMVR de Nice</h3></caption>
           <thead>
