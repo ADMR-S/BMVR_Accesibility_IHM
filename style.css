@@ -640,7 +640,7 @@ body.contrast main {
 }
 
 body.contrast h1#titre.txt {
-  color : #f1e532;
+  color : #f1ce3e;
 }
 
 body.contrast p {
@@ -649,7 +649,7 @@ body.contrast p {
 
 body.contrast a.button {
   color : #000000;
-  background : #f1e532;
+  background : #f1ce3e;
 }
 
 /* Option : prise en compte de la préférence système
