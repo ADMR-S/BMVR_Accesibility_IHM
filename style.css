@@ -627,6 +627,24 @@ body.contrast button{
     background: var(--magenta);
     color: #000000;
 }
+
+body.contrast main {
+  background : #363333;
+}
+
+body.contrast h1#titre.txt {
+  color : #f1e532;
+}
+
+body.contrast p {
+  color : #ffffff;
+}
+
+body.contrast a.button {
+  color : #000000;
+  background : #f1e532;
+}
+
 /* Option : prise en compte de la préférence système
    (on ne force pas, on ajoute juste la classe si besoin côté JS si tu veux)
 */
