@@ -28,6 +28,10 @@ OUTILS DE DEV A INSTALLER :
 
 TODO : 
 
+    FINIR ajouter icônes sur chaque page
+
+    Ajouter section "projets européens" sur accueil
+
     Ajouter bouton "se connecter" (icône profil)
 
     (à vérifier) Assurer lecture NVDA agréable (Passer CHAQUE bloc au lecteur pour vérifier, notamment tableau horaires)
@@ -38,7 +42,8 @@ TODO :
 
     Prévenir pages non implémentées via NVDA (et éventuellement visuellement au survol)
         
-    Finir ajouter icônes sur chaque page 
+    Retour arrière au lieu de retour accueil (non-implémenté)
+     
 
     Revoir page "accessibilité" (cliquable dans le footer) et décrire ce qu'on a fait ?
 
