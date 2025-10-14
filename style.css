@@ -365,13 +365,12 @@ article {
 .service-card a {
   font-weight: 700;
   color: var(--magenta);
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-  transition: border-color 0.2s ease;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .service-card a:hover {
-  border-bottom-color: var(--magenta);
+  color: var(--magenta-hover);
 }
 
 .service-card a:focus-visible {
@@ -664,6 +663,7 @@ body.contrast a.button {
 @media (prefers-contrast: more) {
   /* rien d’obligatoire ici, la bascule est manuelle avec le bouton */
 }
+
 
 
 
