@@ -28,7 +28,7 @@
 }
 
 /* ===============================
-   Manipulation souris
+   Manipulation souris (etiquette du formulaire de contact cliquable)
    =============================== */
 form label {
   cursor: pointer;
