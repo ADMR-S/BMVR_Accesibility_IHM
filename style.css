@@ -239,6 +239,7 @@ button:hover,
 .btn-secondary:hover {
   background: var(--jaune-hover);
 }
+
 /* ===============================
    Box recherche arrondie
    =============================== */
@@ -443,6 +444,12 @@ img, video {
 .contact-form .form-group {
   display: block;
   margin-bottom: 1.2em;
+}
+
+.form-group.contrast button {
+  color: black; /* Appliquer la couleur noire au texte du bouton */
+  background-color: var(--surface); /* Assurer un fond contrasté */
+  border: 1px solid black; /* Ajouter une bordure pour plus de visibilité */
 }
 
 .contact-form label {
