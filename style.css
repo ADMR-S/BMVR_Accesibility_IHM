@@ -125,7 +125,17 @@ a:focus-visible {
 .skip-links a:focus-visible {
   top: 0;
 }
-
+/* ===============================
+   Icones décoratives
+   =============================== */
+.icone {
+  border-radius: 0px;
+  width: 45px; 
+  height: auto;
+}
+.icone.contrast {
+  filter: hue-rotate(180deg);
+}
 /* ===============================
    Header et navigation
    =============================== */
@@ -246,33 +256,32 @@ button:hover,
 form[role="search"] {
   display: flex;
   align-items: center;
-  gap: 0.3rem;
+  background: #fff;
+  border: 2px solid var(--border);
+  border-radius: 9999px;
+  overflow: hidden;
+  padding: 0 0.3rem;
+  width: fit-content;
 }
 
 form[role="search"] input[type="search"] {
-  border: 2px solid var(--border);
-  border-radius: 15px; 
+  border: none;
   padding: 0.7rem 1rem;
   font-size: 1rem;
   outline: none;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-form[role="search"] input[type="search"]:focus-visible {
-  border-color: var(--magenta);
-  box-shadow: 0 0 0 3px var(--focus);
+  border-radius: 9999px 0 0 9999px;
 }
 
 form[role="search"] button {
   background: var(--magenta);
   border: none;
-  border-radius: 20%;
-  width: 3.5rem;
-  height: 3.5rem;
+  border-radius: 9999px;
+
+  height: 3.3rem;
+  margin: 0.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   transition: background 0.2s ease;
 }
 
@@ -281,8 +290,8 @@ form[role="search"] button:hover {
 }
 
 form[role="search"] button img {
-  width: auto; /* Ajustement automatique pour correspondre visuellement */
-  height: 1rem; /* Correspond à la hauteur du texte */
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 
@@ -461,6 +470,7 @@ img, video {
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
+  border-radius: 10px;
   width: 100%;
   box-sizing: border-box;
   padding: 0.5em;
@@ -627,6 +637,7 @@ body.contrast :focus-visible {
 @media (prefers-contrast: more) {
   /* rien d’obligatoire ici, la bascule est manuelle avec le bouton */
 }
+
 
 
 
