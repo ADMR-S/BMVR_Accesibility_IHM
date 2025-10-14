@@ -623,7 +623,10 @@ body.contrast :focus-visible {
   outline-offset: 3px;
 }
 
-
+body.contrast button{
+    background: var(--magenta);
+    color: #000000;
+}
 /* Option : prise en compte de la préférence système
    (on ne force pas, on ajoute juste la classe si besoin côté JS si tu veux)
 */
