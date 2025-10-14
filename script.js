@@ -10,7 +10,6 @@ document.querySelectorAll('.skip-links a').forEach(link => {
 });
 */
 
-window.onload = () => {
   // Écran de chargement / éviter le flash pendant l'injection header/footer
 document.body.style.visibility = 'hidden';
 
@@ -89,4 +88,3 @@ if (contactForm) {
   });
 }
 
-}
