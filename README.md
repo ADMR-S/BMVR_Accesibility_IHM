@@ -1,4 +1,4 @@
-# BMVR_Accessibility_IHM
+# BMVR_Accesibility_IHM
 
 Lien du site : 
 https://admr-s.github.io/BMVR_Accesibility_IHM/
@@ -9,4 +9,3 @@ Accueil
 Blog
 Article
 Contact
-Accessibilité
