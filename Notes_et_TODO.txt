@@ -37,14 +37,10 @@ TODO :
     + Check NVDA Page non implémentée
 
     Prévenir pages non implémentées via NVDA (et éventuellement visuellement au survol)
-    
-    Ajuster couleurs contraste page not-implemented
-    
-    Ajouter icônes pour personnes DYS
+        
+    Finir ajouter icônes sur chaque page 
 
-    Réajuster hauteur icône recherche (loupe)
-
-    Implémenter page "accessibilité" (cliquable dans le footer) et décrire ce qu'on a fait ?
+    Revoir page "accessibilité" (cliquable dans le footer) et décrire ce qu'on a fait ?
 
     Passer TOUTES les Checklists : 
     https://accessibility.voxmedia.com/#designers
