@@ -133,8 +133,8 @@ a:focus-visible {
   width: 45px; 
   height: auto;
 }
-.icone.contrast {
-  filter: hue-rotate(180deg);
+body.contrast .icone {
+  filter: hue-rotate(104deg) brightness(650%);
 }
 /* ===============================
    Header et navigation
@@ -630,6 +630,27 @@ body.contrast :focus-visible {
   outline-offset: 3px;
 }
 
+body.contrast button{
+    background: var(--magenta);
+    color: #000000;
+}
+
+body.contrast main {
+  background : #363333;
+}
+
+body.contrast h1#titre.txt {
+  color : #f1e532;
+}
+
+body.contrast p {
+  color : #ffffff;
+}
+
+body.contrast a.button {
+  color : #000000;
+  background : #f1e532;
+}
 
 /* Option : prise en compte de la préférence système
    (on ne force pas, on ajoute juste la classe si besoin côté JS si tu veux)
@@ -637,6 +658,7 @@ body.contrast :focus-visible {
 @media (prefers-contrast: more) {
   /* rien d’obligatoire ici, la bascule est manuelle avec le bouton */
 }
+
 
 
 
