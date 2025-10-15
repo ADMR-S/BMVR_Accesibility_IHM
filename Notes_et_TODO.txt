@@ -34,9 +34,6 @@ TODO :
 
     Retour arrière au lieu de retour accueil (non-implémenté)
 
-    Rendre icones cliquables + ameliorer qualité
-    + Remplacer illustrations dans diapo
-
       (à vérifier) Assurer lecture NVDA agréable (Passer CHAQUE bloc au lecteur pour vérifier, notamment tableau horaires)
         Peut-on vraiment TOUT lire via lecteur d'écran sans la souris ?
         Supprimer redondances excessives
