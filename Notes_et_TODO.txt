@@ -58,14 +58,5 @@ TODO :
 
     Bannière cliquable : retour vers accueil ? 
 
-Présentation :
-
-    FAIRE UN AUDIT FINAL AVEC LA GRILLE A AJOUTER A LA PRESENTATION
-
-    grille notation : 
-    https://docs.google.com/spreadsheets/d/1JBP69WyjyQsB25Gmguivp_QGhzgq8-BbRUJSAEkuAIo/edit?gid=0#gid=0
-
-    Définir Personas
-    Parler de la répartition du travail
-    Parler des enjeux du code accessible
-    Sémantique du code 
+grille notation : 
+https://docs.google.com/spreadsheets/d/1JBP69WyjyQsB25Gmguivp_QGhzgq8-BbRUJSAEkuAIo/edit?gid=0#gid=0
