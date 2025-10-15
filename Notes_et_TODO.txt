@@ -29,13 +29,13 @@ OUTILS DE DEV A INSTALLER :
 TODO : 
 
     Prévenir pages non implémentées via NVDA (et éventuellement visuellement au survol)
-
-    Rendre icones cliquables + ameliorer qualité
-    + Remplacer illustrations dans diapo
-
+    
     snap menu contextuel lors du scroll
 
     Retour arrière au lieu de retour accueil (non-implémenté)
+
+    Rendre icones cliquables + ameliorer qualité
+    + Remplacer illustrations dans diapo
 
       (à vérifier) Assurer lecture NVDA agréable (Passer CHAQUE bloc au lecteur pour vérifier, notamment tableau horaires)
         Peut-on vraiment TOUT lire via lecteur d'écran sans la souris ?
