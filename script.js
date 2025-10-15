@@ -88,7 +88,7 @@ if (contactForm) {
   });
 }
 
-/*
+
 // Gestion du défilement pour la navigation principale
 document.addEventListener('scroll', () => {
   const menu = document.getElementById('navigation-principale');
@@ -100,5 +100,5 @@ document.addEventListener('scroll', () => {
     menu.style.position = 'static';
   }
 });
-*/
+
 
