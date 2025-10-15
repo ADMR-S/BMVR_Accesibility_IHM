@@ -25,6 +25,12 @@ OUTILS DE DEV A INSTALLER :
     validateur HTML W3C : 
     https://validator.w3.org/
 
+    
+    Checklists : 
+    https://accessibility.voxmedia.com/#designers
+    https://not-checklist.intopia.digital/
+    https://design-accessible.fr/checklist#livrables
+
 
 TODO : 
 
@@ -36,13 +42,6 @@ TODO :
 
     Ajouter section "projets européens" sur accueil
      
-    Passer TOUTES les Checklists : 
-    https://accessibility.voxmedia.com/#designers
-    https://not-checklist.intopia.digital/
-    https://design-accessible.fr/checklist#livrables
-
-    Essayer de coller + au site de la BMVR (sections manquantes, onglets, type de présentation...)
-
     Bannière cliquable : retour vers accueil ? 
 
 grille notation : 

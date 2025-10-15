@@ -91,10 +91,10 @@ if (contactForm) {
 /*
 // Gestion du défilement pour la navigation principale
 document.addEventListener('scroll', () => {
-  const menu = document.getElementById('menu-principal');
+  const menu = document.getElementById('navigation-principale');
   const headerHeight = document.querySelector('header').offsetHeight;
 
-  if (window.scrollY > headerHeight-100) {
+  if (window.scrollY > headerHeight) {
     menu.style.position = 'fixed';
   } else {
     menu.style.position = 'static';
