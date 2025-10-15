@@ -29,6 +29,7 @@ OUTILS DE DEV A INSTALLER :
 TODO : 
 
     FINIR ajouter icônes sur chaque page
+    + Remplacer illustrations dans diapo
 
     Ajouter section "projets européens" sur accueil
 
