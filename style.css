@@ -673,6 +673,14 @@ body.contrast a.button {
   /* rien d’obligatoire ici, la bascule est manuelle avec le bouton */
 }
 
+#menu-principal a[aria-current="page"] img {
+  filter: brightness(0) invert(1); /* Icône blanche */
+}
+
+body.contrast #menu-principal a[aria-current="page"] img {
+  filter: brightness(0) invert(0); /* Icône noire en contraste élevé */
+}
+
 
 
 
