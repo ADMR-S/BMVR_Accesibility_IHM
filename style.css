@@ -155,6 +155,8 @@ body.contrast .icone_accueil {
    Header et navigation
    =============================== */
 header {
+  display: block; /* Assurer que le conteneur parent est un bloc */
+  height: auto; /* Ajuster la hauteur pour inclure le contenu */
   border-bottom: 5px solid var(--jaune);
   padding: 1.2rem 0;
 }
@@ -187,6 +189,14 @@ header {
   height: auto;
   display: block;
   margin: 0 auto;
+}
+
+#menu-principal {
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre pour distinguer la navigation */
 }
 
 #menu-principal ul {
