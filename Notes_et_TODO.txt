@@ -28,6 +28,8 @@ OUTILS DE DEV A INSTALLER :
 
 TODO : 
 
+    Prévenir pages non implémentées via NVDA (et éventuellement visuellement au survol)
+
     Rendre icones cliquables + ameliorer qualité
     + Remplacer illustrations dans diapo
 
@@ -42,9 +44,6 @@ TODO :
     Ajouter section "projets européens" sur accueil
 
     Ajouter bouton "se connecter" (icône profil)
-
-    Prévenir pages non implémentées via NVDA (et éventuellement visuellement au survol)
-        
      
     Revoir page "accessibilité" (cliquable dans le footer) et décrire ce qu'on a fait ?
 
@@ -55,23 +54,9 @@ TODO :
 
     Changer icône souris au survol du formulaire contact
 
-    Couleurs : prendre référentiel pour contrastes, codes couleurs ? outils disponibles ?
-    https://stephaniewalter.design/fr/blog/accessibilite-et-couleurs-outils-et-ressources-pour-concevoir-des-produits-accessible/
-
     Essayer de coller + au site de la BMVR (sections manquantes, onglets, type de présentation...)
 
-    Assurer accessibilité images + en ajouter une dans la page article ? 
-
-    Rendre + joli, changer bannière
-
     Bannière cliquable : retour vers accueil ? 
-
-    clean + mettre code css dans css
-
-    Faire alertes en fin d'index.html ou SUPPRIMER LA SECTION CORRESPONDANTE (bloc gris en fin d'accueil)
-
-    utiliser librairie js yt-dlp pour extraire les sous-titres ?
-    OU voir RapidAPI pour la transcription
 
 Présentation :
 
