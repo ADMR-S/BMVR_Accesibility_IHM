@@ -28,24 +28,24 @@ OUTILS DE DEV A INSTALLER :
 
 TODO : 
 
-    FINIR ajouter icônes sur chaque page
+    Rendre icones cliquables + ameliorer qualité
     + Remplacer illustrations dans diapo
+
+    snap menu contextuel lors du scroll
+
+    Retour arrière au lieu de retour accueil (non-implémenté)
+
+      (à vérifier) Assurer lecture NVDA agréable (Passer CHAQUE bloc au lecteur pour vérifier, notamment tableau horaires)
+        Peut-on vraiment TOUT lire via lecteur d'écran sans la souris ?
+        Supprimer redondances excessives
 
     Ajouter section "projets européens" sur accueil
 
     Ajouter bouton "se connecter" (icône profil)
 
-    (à vérifier) Assurer lecture NVDA agréable (Passer CHAQUE bloc au lecteur pour vérifier, notamment tableau horaires)
-        Peut-on vraiment TOUT lire via lecteur d'écran sans la souris ?
-        Supprimer redondances excessives
-
-    + Check NVDA Page non implémentée
-
     Prévenir pages non implémentées via NVDA (et éventuellement visuellement au survol)
         
-    Retour arrière au lieu de retour accueil (non-implémenté)
      
-
     Revoir page "accessibilité" (cliquable dans le footer) et décrire ce qu'on a fait ?
 
     Passer TOUTES les Checklists : 
@@ -63,8 +63,6 @@ TODO :
     Assurer accessibilité images + en ajouter une dans la page article ? 
 
     Rendre + joli, changer bannière
-
-    snap menu contextuel lors du scroll
 
     Bannière cliquable : retour vers accueil ? 
 
